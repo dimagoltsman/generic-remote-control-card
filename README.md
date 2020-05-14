@@ -10,6 +10,7 @@ and then just configure the broadlink codes for each button.
 All buttons are configured according to the id of the button in the html section of `remote-html.js`
 
 simple remote example:
+
 ```
 type: 'custom:generic-remote-control-card'
 name: Hisense
