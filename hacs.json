@@ -1,5 +1,6 @@
 {
   "name": "Generic Remote Content Card",
   "content_in_root": false,
-  "filename": "generic-remote-content-card.js"
+  "filename": "generic-remote-content-card.js",
+  "render_readme" : true
 }
