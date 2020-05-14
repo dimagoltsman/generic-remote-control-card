@@ -95,28 +95,66 @@ LG remote example:
 ```
 
 
-Mibox Remote example, thanx to Avi Abeksis! (code also from mibox):
+Mibox Remote example, with ADB server
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/mibox/remote-back.png?raw=true" height="400">
 
 ```
-- type: "custom:content-card-remote-control"
-  broadlink_host: '192.168.1.151'
-  name: Mibox
-  remote_template: mibox
-  buttons:
-    top: "JgBOACITFSQWERYaFiQVEhUSFRsWGxQmFC8VAAGaJBEVJRQTFBwVJRQTFREWGxUbFSUULxQAAZ0iERYkFBMVGxYkFRIUExUbFRwVJRUvFAANBQAAAAAAAAAAAAA="
-    bottom: "JgBOACMSFSUVEhUbFSYUEhUSFRwUJRQmFRIUAAGvIxEUJhUSFBwUJhUSFRIUHBUlFCYUExUAAa0jEhQlFRIWGxUkFhEWERYaFSUVJRUSFQANBQAAAAAAAAAAAAA="
-    clickleft: "JgBOACMSFCYUExUbFCYVEhQSFSUVLhYbFRsWAAGaIxEVJRUSFhoVJRUSFRIVJRQvFRsVHBQAAZwjERUlFhAWGxYkFRIVERUmFC8VGxUcEwANBQAAAAAAAAAAAAA="
-    clickright: "JgBOACMSFiQVERUdFCUUExUSFC8VEhUSFSUUAAGuJBEUJhMUEx0UJhUSFBMULxUSFRIVJBUAAa8iEhUkFRIWGxUkFhEWERUuFhEVEhUlFAANBQAAAAAAAAAAAAA="
-    ok: "JgBOACISFyMVEhQcFiQVEhUSFS8UHBUSFS8VAAGaIhMUJhQSFRwTJxQTFREWLhQcFRITMBUAAZsiEhUlFBMTHRUlFRIVEhQvFRsWERUuFwANBQAAAAAAAAAAAAA="
-    back: "JgBoACMRFiQUExQcFiQVEhYRFRsVLhUlFRwVAAGbIhIVJRURFhsVJRQTFRIWGhUvFCYUHBUAAZokERUlFRIUHBUlFBMUEhUcFC8VJRUbFQABmyMRFSUVEhQcFiQVEhUSFRsWLRUlFhsUAA0F"
-    exit: "JgBOACMSFSUVEhUbFSUVEhYQFhsVLhUmEx0VAAGbIhEVJRUSFB0VJRQTFBMUHBQvFSUVGxYAAZojEhMmFRIVHBQlFRIVEhUbFDAVJRcZFAANBQAAAAAAAAAAAAA="
-    info: "JgBoACMSEycUEhUcFCUWERYRFRwVJBUlFRIWAAGtIxEVJRUSFRsVJRUSFRIUHBQmFSUUExUAAa4hExUlFRIVGxQmFBMTFBMdFCYUJhQTFAABriMSEycUEhQdEycVERQTFRwVJBYkFhEVAA0F"
-    home: "JgCCACMSFCYUExMdFSUVEhURFSUWEhMcFiQVAAGuIhIWJBUSFRsWJBUSFRIVJhMSFhwUJRUAAa4hFBQlFxAWGxQlFBMUExQmFRIUHBQmFQABrSQRFCYUExQcFCYUExQTFCUWERUcFSQWAAGuIxAWJBYRFRwVJBYRFRIWJBQTFRwTJxQADQUAAAAAAAA="
-    power: "JgBOACMSFRIVLhUvFRIULxUSFC8VEhQvFi4UAAFiJBETFBMwFS4VEhUvFREWLhUSFS4VLhYAAWEjEhURFS8ULxUSFS4VEhUuFRIVLxUuFQANBQAAAAAAAAAAAAA="
-    volumeup: "JgBOACQQFSUVEhUbFSUVEhUSFS4VJhQTFBMUAAGuIhIVJRUSFRwTJhUSFRIVLhQmFBMTFBUAAa0jEhUlFRIUHBUlFBMUExQvFSUVEhURFQANBQAAAAAAAAAAAAA="
-    volumedown: "JgBOACMRFSUVEhQcFSUVEhUSFS4VLhUSFRwVAAGbIhIVJBYRFRwUJRYRFRIWLhUvFBIVHBQAAZskERQmFBMUHBYkFRIUEhUvFC8VEhQcFQANBQAAAAAAAAAAAAA="
+buttons:
+  back:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 4
+  bottom:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 20
+  clickleft:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 21
+  clickright:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 22
+  home:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 3
+  ok:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 66
+  power:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 26
+  top:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 19
+  volumedown:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 25
+  volumeup:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.workroom_mibox
+      command: input keyevent 24
+name: Workroom Mibox
+remote_template: mibox
+type: 'custom:generic-remote-control-card'
+
 ```
 
 PartnerTV Remote example, thanx to @VirtualL :
