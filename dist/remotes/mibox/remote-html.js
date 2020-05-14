@@ -1,7 +1,7 @@
 function getRemoteStyle_mibox(config) {
    
    const template = config.remote_template;
-   const base_url = `remotes/${template}`;    
+   const base_url = `/hacsfiles/generic-remote-control-card/remotes/${template}`;    
     
   return `
   ha-card{
