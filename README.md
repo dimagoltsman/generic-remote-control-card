@@ -2,7 +2,7 @@
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
 
-
+# This repo is now migrated to https://github.com/dimagoltsman/generic-remote-control-card #
 
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
