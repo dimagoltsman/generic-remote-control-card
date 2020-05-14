@@ -2,6 +2,6 @@
   "name": "Generic Remote Control Card",
   "description" : "a remote control card that can be used with any HA service",
   "content_in_root": false,
-  "filename": "generic-remote-content-card.js",
+  "filename": "generic-remote-control-card.js",
   "render_readme" : true
 }
