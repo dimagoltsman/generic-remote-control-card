@@ -14,7 +14,7 @@ function loadScript(remote_template){
 }
 
 
-class GenericRemotContentCard extends HTMLElement {
+class GenericRemotControlCard extends HTMLElement {
 
   constructor() {
     super();
@@ -99,4 +99,4 @@ class GenericRemotContentCard extends HTMLElement {
   	return config.buttons[buttonId];
   }
 
-customElements.define('generic-remote-control-card', GenericRemotContentCard);
+customElements.define('generic-remote-control-card', GenericRemotControlCard);
