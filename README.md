@@ -21,7 +21,6 @@ All buttons are configured according to the id of the button in the html section
 simple remote example:
 ```
   - type: "custom:content-card-remote-control"
-    broadlink_host: '192.168.1.151'
     name: Hisense
     remote_template: simple
     buttons:
