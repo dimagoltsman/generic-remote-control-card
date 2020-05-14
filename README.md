@@ -297,6 +297,6 @@ if you want to add your own remote template, you can do it in a new folder near 
 set remote_template to the name of your new folder. 
 just make sure you are changing the html and css methods suffixes
 
-#you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml#
+# you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml #
 
 
