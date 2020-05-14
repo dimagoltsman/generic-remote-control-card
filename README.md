@@ -86,7 +86,7 @@ buttons:
 
 LG remote example:
 ```
-type: "custom:content-card-remote-control"
+type: 'custom:generic-remote-control-card'
 broadlink_host: '192.168.1.151'
 name: LG Tv
 remote_template: simple
@@ -241,7 +241,7 @@ PartnerTV Remote example, thanx to @VirtualL :
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/partner/remote-screen-shot.png?raw=true" height="400">
 
 ```
-type: "custom:content-card-remote-control"
+type: 'custom:generic-remote-control-card'
 broadlink_host: '192.168.1.151'
 name: PartnerTV
 remote_template: partner
