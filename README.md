@@ -2,6 +2,8 @@
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
 
+<img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/example.png" height="400">
+
 ```
 resources:
   - url: /hacsfiles/generic-remote-control-card/generic-remote-content-card.js
