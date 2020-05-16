@@ -93,6 +93,7 @@ buttons:
 
 
 LG remote example:
+(remote design by Avi Abeksis)
 ```
 type: 'custom:generic-remote-control-card'
 broadlink_host: '192.168.1.151'
