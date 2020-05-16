@@ -460,48 +460,48 @@ function getRemoteHtml_lg_new(config){return `
             <div style="text-align:center">
 			<h1>${config.name}</h1>
 			</div>
-			<div id="remote-control-${template}">
+			<div id="remote-control-${config.remote_template}">
 				<h2>
 					Main navigation
 				</h2>
 				<ul>
-					<li id="power" class="myButton-${template}"><a href="#" title="Power"><span>Power</span></a></li>
-					<li id="volmin" class="myButton-${template}"><a href="#" title="Vol Min"><span>Vol Min</span></a></li>
-					<li id="volplus" class="myButton-${template}"><a href="#" title="Vol Plus"><span>Vol Plus</span></a></li>
-					<li id="mute" class="myButton-${template}"><a href="#" title="Vol Mute"><span>Vol Mute</span></a></li>
-					<li id="source" class="myButton-${template}"><a href="#" title="Source"><span>Source</span></a></li>
+					<li id="power" class="myButton-${config.remote_template}"><a href="#" title="Power"><span>Power</span></a></li>
+					<li id="volmin" class="myButton-${config.remote_template}"><a href="#" title="Vol Min"><span>Vol Min</span></a></li>
+					<li id="volplus" class="myButton-${config.remote_template}"><a href="#" title="Vol Plus"><span>Vol Plus</span></a></li>
+					<li id="mute" class="myButton-${config.remote_template}"><a href="#" title="Vol Mute"><span>Vol Mute</span></a></li>
+					<li id="source" class="myButton-${config.remote_template}"><a href="#" title="Source"><span>Source</span></a></li>
 				</ul>
 
 				<ul>
-					<li id="list"  class="myButton-${template}""><a href="#" title="list + 11"><span>+list</span></a></li>
-					<li id="section12"  class="myButton-${template}""><a href="#" title="Section 12"><span>Section 12</span></a></li>
+					<li id="list"  class="myButton-${config.remote_template}""><a href="#" title="list + 11"><span>+list</span></a></li>
+					<li id="section12"  class="myButton-${config.remote_template}""><a href="#" title="Section 12"><span>Section 12</span></a></li>
 				</ul>
 
 				<ul>
-					<li class="myButton-${template}" id="exit"><a href="#" title="exit"><span>exit</span></a></li>
-					<li class="myButton-${template}" id="one"><a href="#" title="one"><span>one</span></a></li>
-					<li class="myButton-${template}" id="two"><a href="#" title="two"><span>two</span></a></li>
-					<li class="myButton-${template}" id="three"><a href="#" title="three"><span>three</span></a></li>
-					<li class="myButton-${template}" id="four"><a href="#" title="four"><span>four</span></a></li>
-					<li class="myButton-${template}" id="five"><a href="#" title="five"><span>five</span></a></li>
-					<li class="myButton-${template}" id="six"><a href="#" title="six"><span>six</span></a></li>
-					<li class="myButton-${template}" id="seven"><a href="#" title="seven"><span>seven</span></a></li>
-					<li class="myButton-${template}" id="eight"><a href="#" title="eight"><span>eight</span></a></li>
-					<li class="myButton-${template}" id="nine"><a href="#" title="nine"><span>nine</span></a></li>
-					<li class="myButton-${template}" id="zero"><a href="#" title="zero"><span>zero</span></a></li>
-					<li class="myButton-${template}" id="netflix"><a href="#" title="netflix"><span>netflix</span></a></li>
-					<li class="myButton-${template}" id="amazon"><a href="#" title="amazon"><span>amazon</span></a></li>
-					<li class="myButton-${template}" id="channelup"><a href="#" title="channel up"><span>channelup</span></a></li>
-					<li class="myButton-${template}" id="channeldown"><a href="#" title="channel down"><span>channeldown</span></a></li>
-					<li class="myButton-${template}" id="microphone"><a href="#" title="microphone"><span>microphone</span></a></li>
-					<li class="myButton-${template}" id="settings"><a href="#" title="settings"><span>settings</span></a></li>
-					<li class="myButton-${template}" id="menu"><a href="#" title="Menu"><span>Menu</span></a></li>
-					<li class="myButton-${template}" id="back"><a href="#" title="Go back"><span>back</span></a></li>
-					<li class="myButton-${template}" id="left"><a href="#" title="Left"><span>Left</span></a></li>
-					<li class="myButton-${template}" id="right"><a href="#" title="right"><span>right</span></a></li>
-					<li class="myButton-${template}" id="top"><a href="#" title="Top"><span>Top</span></a></li>
-					<li class="myButton-${template}" id="bottom"><a href="#" title="Bottom"><span>Bottom</span></a></li>
-					<li class="myButton-${template}" id="ok"><a href="#" title="OK"><span>OK</span></a></li>
+					<li class="myButton-${config.remote_template}" id="exit"><a href="#" title="exit"><span>exit</span></a></li>
+					<li class="myButton-${config.remote_template}" id="one"><a href="#" title="one"><span>one</span></a></li>
+					<li class="myButton-${config.remote_template}" id="two"><a href="#" title="two"><span>two</span></a></li>
+					<li class="myButton-${config.remote_template}" id="three"><a href="#" title="three"><span>three</span></a></li>
+					<li class="myButton-${config.remote_template}" id="four"><a href="#" title="four"><span>four</span></a></li>
+					<li class="myButton-${config.remote_template}" id="five"><a href="#" title="five"><span>five</span></a></li>
+					<li class="myButton-${config.remote_template}" id="six"><a href="#" title="six"><span>six</span></a></li>
+					<li class="myButton-${config.remote_template}" id="seven"><a href="#" title="seven"><span>seven</span></a></li>
+					<li class="myButton-${config.remote_template}" id="eight"><a href="#" title="eight"><span>eight</span></a></li>
+					<li class="myButton-${config.remote_template}" id="nine"><a href="#" title="nine"><span>nine</span></a></li>
+					<li class="myButton-${config.remote_template}" id="zero"><a href="#" title="zero"><span>zero</span></a></li>
+					<li class="myButton-${config.remote_template}" id="netflix"><a href="#" title="netflix"><span>netflix</span></a></li>
+					<li class="myButton-${config.remote_template}" id="amazon"><a href="#" title="amazon"><span>amazon</span></a></li>
+					<li class="myButton-${config.remote_template}" id="channelup"><a href="#" title="channel up"><span>channelup</span></a></li>
+					<li class="myButton-${config.remote_template}" id="channeldown"><a href="#" title="channel down"><span>channeldown</span></a></li>
+					<li class="myButton-${config.remote_template}" id="microphone"><a href="#" title="microphone"><span>microphone</span></a></li>
+					<li class="myButton-${config.remote_template}" id="settings"><a href="#" title="settings"><span>settings</span></a></li>
+					<li class="myButton-${config.remote_template}" id="menu"><a href="#" title="Menu"><span>Menu</span></a></li>
+					<li class="myButton-${config.remote_template}" id="back"><a href="#" title="Go back"><span>back</span></a></li>
+					<li class="myButton-${config.remote_template}" id="left"><a href="#" title="Left"><span>Left</span></a></li>
+					<li class="myButton-${config.remote_template}" id="right"><a href="#" title="right"><span>right</span></a></li>
+					<li class="myButton-${config.remote_template}" id="top"><a href="#" title="Top"><span>Top</span></a></li>
+					<li class="myButton-${config.remote_template}" id="bottom"><a href="#" title="Bottom"><span>Bottom</span></a></li>
+					<li class="myButton-${config.remote_template}" id="ok"><a href="#" title="OK"><span>OK</span></a></li>
 				</ul>
 			</div>	
 		</div>
