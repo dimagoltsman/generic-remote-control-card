@@ -6,7 +6,7 @@
 
 ```
 resources:
-  - url: /hacsfiles/generic-remote-control-card/generic-remote-content-card.js
+  - url: /hacsfiles/generic-remote-control-card/generic-remote-control-card.js
     type: module
 ```
 
