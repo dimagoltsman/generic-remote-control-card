@@ -292,6 +292,249 @@ buttons:
   ok: 
 ```
 
+Yes Remote (Design and codes by Rubinov lior):
+
+<img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/yesremote.png" height="400">
+
+```
+type: 'custom:generic-remote-control-card'
+name: 'YES'
+remote_template: yesremote
+buttons:
+  tvpower: null
+  yespower:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJ5ISExISEjgSEhMSEhMRExM3EhISExI3EjgSNxM3ERMSExI3EhMSExETEhMSNxMSEhMRExI4EjcSOBI3EhMSNxI3EwAFYgABJUoTAAxCAAEmShIADQU=
+  amppower:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBUAE4UJxQTFCcUExQnFBMUExQTFBMUExQTFCcAAzxNFCcUExQnFBMUJxQTFBMUExQUFBMUExQnAAM7ThQmFBQTJxQTFCcUExQTFBQTFBQTFBMUJwANBQAAAAA=
+  av:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBwAE4UJxQTFCcUExQTFCcUExQnFBMUExQTFBMAA0xOFCcUExQnFBMUExQnFBMUJxQTFBMUExQTAANMThQnFBMUJxQTFBMUJxQTFCYUFBQTFBMUEwADTE4UJxMUFCYUFBQTFCYUFBQmFBMUFBQTFBMADQUAAAAAAAAAAA==
+  button1:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJ5ISEhITEjgRExITERQRExI4EhISExI3EjgSNxM3EhITEhEUEhISExEUETgSNxMSEhMSNxI3EzcSNxMSERQROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
+  button2:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMTEhISEjgSEhITEhMRExM3EhISExI3EzcSNxM3EhISExI3EhMSExE4EhMROBITERQRExI4EjcSExI3EhMSNxM3EgAFYgABJUoTAA0FAAAAAAAAAAA=
+  button3:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMSExETEjgRExITEhMSEhM3EhMRExM3EjcSNxM3EhITEhI3EhMSExE4EzcROBITEhISExI3EzcRFBISEhMROBM3EgAFYgABJUsRAA0FAAAAAAAAAAA=
+  button4:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZQSEhITETgSExITERMSExI3EhMSExE4EzcSNxI3ExISExETEhMSExE4EhMROBITERMSOBI3EzcRExI4ERMSOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
+  button5:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhMSEjcSExMSERMSExI4EhISExE4EzcSNxI4EhISExETEhMSExETEhMSOBISEhMROBI4ETgSNxM3EhMROBI3EgAFYwABJkkTAA0FAAAAAAAAAAA=
+  button6:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMTEhITETgSExETEhMSExE4ExISEhI4EjcTNxE4EhMSEhITEhMRExI4EjcSOBETExISNxI4EjcTEhETEhMSNxM3EgAFYgABJkoRAA0FAAAAAAAAAAA=
+  button7:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMSExETEzcSEhITEhMRExI4EhMRExI4ETgSNxM3EhITEhITETgSExEUETgSNxMSEhMROBITETgTNhMSEhMSNxM3EgAFYgABJUsSAA0FAAAAAAAAAAA=
+  button8:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMTEhITETgTEhISEhMSExE4EhMRFBE4EjcTNxI3EhMSEhITEzcSEhM3EhISOBISEhMSNxMSEjcTEhI4EhISOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
+  button9:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhMSEjcTEhITERQSEhM3EhISExI3EzcROBM2ExISExETEzcSExETExISNxMSEhMSNxITETgTNhM3EhMROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
+  button0:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMTEhEUETgSExETEhMSExE4EhMRExM3ETgSOBI3EhMRExI4ETgTEhETEjgROBITEhMSEhITEjcTNxETEhMSNxM3EQAFYwABJkoSAA0FAAAAAAAAAAA=
+  vod:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhMSEjcTEhITEhITEhI3EhMSExI3EjgSNxI3ExISExI3EhMSEhMSEhMSEhMSEhMSEhI4EjcSOBE4EzYSOBI3EwAFYQABJ0kTAA0FAAAAAAAAAAA=
+  mytv:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZQRExITETgSExEUERMSExE4EhMSExE4EjgTNhE4EhMSExETEjgSEhITEhMRExI4ERQROBEUEjcSNxI4ETgSExE4FAAFYAABJkoSAA0FAAAAAAAAAAA=
+  volumeup: null
+  volumedown: null
+  channelup:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJpITEhITETgSExITERMSExI3EhMSExE4EjcTNxE4EhMSExE4EhMROBITEjcSOBISExISExE4EhMROBITERMSOBE4EwAFYQABJkoSAAxDAAEmSRMADQU=
+  channeldown:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABKJESExMREjgRExQREhMTERI4ExESExM2EjgSNxI4EhISExI3EjgROBITETgSOBETEhMSExETExISNxITEhMROBM3EgAFYgABJUoTAAxCAAElSxEADQU=
+  mute:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgCoAE4UExQUFCYUExQnFBQTExUmFBMUFRIUFBUAA11OFBQTFhImFBQTKRIUExQUJhQTFBQUExQTAANfThQTFBMUJxQTFCcUExQTFCcUExQTFBQUEwADX04UExQTFCcUExQnFBMUExQnFBMUExQTFBQAA19OFBMUExQnFBMUJxQTFBMUJxQTFBQTExQTAANgThQTFBMUJxQUEycUExQTFCcUExQTFBMUEwANBQ==
+  return:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJZMTEhEUETgSExETExISExE4EhMRExI4EjcSOBI3EhMRExITEjcSExI3EjgSNxITEhMROBITETgSExETEhMSNxI4EQAFYwABJUsSAAxCAAEmShIADQU=
+  clickleft:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpITEhITETgSExITEhISExE4ExISExE4EjcSOBE4ExISExEUERMSNxITEjcSOBISEhMSOBE4ERQROBITERMTNxI3EgAFYgABJ0kSAA0FAAAAAAAAAAA=
+  clickright:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhMSEjcSExITERQRExI4ERMSExE4EjgROBI4ERMSExE4EjgSEhI4ETgTNxISEhMSExETEjgSEhITEhMROBI4EgAFYQABJkoSAA0FAAAAAAAAAAA=
+  clickup:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMTEhEUETgSExETEhMSExE4ExIRExI4ETgSOBE4EhMRExI4EjcTEhE4ExIROBMSEhMRExITETgTEhI3ExISOBE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+  clickdown:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJpMRExITEjcSExITERMSExI4ERMSExI3EjgROBI3EhMTEhETExISOBETEhMROBITEhMROBI3ExITNhI4EhMROBI3EgAFYwABJUoTAAxCAAElSxIADQU=
+  plus:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABKJMSEhITEjcTEhMSEhMRExI4ERMSExI3EzcSNxI4ERMTEhEUEhISOBI3EjcSOBEUERMSOBE4EhMRExITEhMROBI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
+  info:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJZMSExEUETgSExETEhMSExE4EhMRExM3ETgSOBE4EhMRExITEhMSNxI4ERMSOBETEhMROBM3ERMSExI3EhMSOBE4EgAFYgABJkoSAAxDAAElShIADQU=
+  ok:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4ETgSOBE4EhMRExI4ETgSExEUERMSOBETEhMRFBETEjgROBI3EhMSOBE4EQAFYwABJkoSAA0FAAAAAAAAAAA=
+  table:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhITEjcSExEUERMTEhI3EhMSExE4EjgSNxI3EhMSExETEjgROBITETgTNxETEhMSNxITEhMSNxITERQROBE4EgAFYwABJUoTAA0FAAAAAAAAAAA=
+  schedule:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBYAAABJpMRExITETgSExITERMSExI3ExISExI3EjgSNxI3EhMSExETEjgSNxI4ERMSOBETEhMSNxITEhMRExM3ERMSOBE4EgAFYwABJUoTAAxCAAElSxEADQU=
+  orange:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZQSEhMSEjcSExITEhISExM2EhMTEhE4EjgSNxE4EhMSExETEjgROBM3ETgSNxMSEhMROBMSERQRExITEhISOBI3EwAFYAABJ0oSAA0FAAAAAAAAAAA=
+  green:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpISExETEzcRExITEhMRExI4EhISExI4EjcSNxM3ERMSExI4ERMSOBE4EhMROBITERMSExI3EhMSExE4EhMROBM3EQAFYwABJUsRAA0FAAAAAAAAAAA=
+  yellow:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4EjcSOBI3EhMRExI4ERQSNxE4EzcSNxITERMSExI4ERMSExITERMTNxE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+  blue:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZQRExITETgSExITERMTEhM2EhMSExI3EjgROBI3ExISExE4EjgSNxI4EjcSNxMSERQRExITEhMSEhITERQSNxE4EgAFYwABJUoSAA0FAAAAAAAAAAA=
+  rewind:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMRFBETEzcRExMSEhMRExI4EhITEhI3EjgSNxM3EhISExITERMSExI3ExISExE4EhMSNxI4ETgWDxI3EjcTEhI4EQAFYwABJkoRAA0FAAAAAAAAAAA=
+  play:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhITEjcTEhITERMSExI4ERMSExE4EjgROBI3EhMSExE4EhMSNxMSEhMRExI4ERMSExI3EhMTNxE4EjcSExI3EgAFYwABJUoTAA0FAAAAAAAAAAA=
+  forward:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMTEhITETgTEhISEhMTEhE4ExIRFBE4EjcTNxI3EhMRFBE4EhMRExI4ERMTEhI3EhMSExI3EzcSEhI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+  rec:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMRExMSEjcSExITERMSExI3EhMSExI3EzcROBI3EhMSExETEhMSNxMSEhMRExM3ERMSOBE4ExISNxI4ETgSExE4EwAFYgABJUoSAA0FAAAAAAAAAAA=
+  stop:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJpMSEhMSEzcSEhITERQRExI4EhISExI3EjgSNxI4EhISExE4EjgROBITERQRExI4ERMTEhEUERMSOBE4EjcSExI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
+  pause:
+    call: broadlink.send
+    data:
+      host: 192.168.1.160
+      packet: >-
+        JgBQAAABJZMSExITETgTEhETEhMSExE4EhMRExI4EjcSOBE4EhMRExITEzYSOBEUEhISExE4EhMSNxITEhMROBI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+
+```
+
 
 # Contribution
 if you want to add your own remote template, you can do it in a new folder near the 'simple' and 'lg' remotes and
