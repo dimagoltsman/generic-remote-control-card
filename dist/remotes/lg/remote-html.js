@@ -355,7 +355,7 @@ function getRemoteHtml_lg(config){return `
             <div style="text-align:center">
 			<h1>${config.name}</h1>
 			</div>
-			<div id="remote-control-${template}">
+			<div id="remote-control-lg">
 				<h2>
 					Main navigation
 				</h2>
