@@ -96,7 +96,6 @@ LG remote example:
 (remote design by Avi Abeksis)
 ```
 type: 'custom:generic-remote-control-card'
-broadlink_host: '192.168.1.151'
 name: LG Tv
 remote_template: simple
 buttons:
@@ -251,7 +250,6 @@ PartnerTV Remote example, thanx to @VirtualL :
 
 ```
 type: 'custom:generic-remote-control-card'
-broadlink_host: '192.168.1.151'
 name: PartnerTV
 remote_template: partner
 buttons:
