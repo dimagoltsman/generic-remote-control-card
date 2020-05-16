@@ -182,8 +182,8 @@ buttons:
 ```
 
 
-Mibox Remote example, with ADB server
-
+Mibox Remote example, with ADB server  
+(remote design by Avi Abeksis)
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/mibox/remote-back.png?raw=true" height="400">
 
 ```
