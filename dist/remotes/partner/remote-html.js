@@ -1,7 +1,8 @@
 function getRemoteStyle_partner(config) {
    
-   const base_url = `/local/content-card-remote-control/${config.remote_template}`;    
-    
+   const template = config.remote_template;
+   const base_url = `/hacsfiles/generic-remote-control-card/remotes/${template}`;
+   
   return `
     ha-card{
     	background-color:transparent;
@@ -540,8 +541,11 @@ function getRemoteStyle_partner(config) {
   `;
 }
 
-function getRemoteHtml_partner(config){return `
-       <div class="container">
+function getRemoteHtml_partner(config){
+ const template = config.remote_template;
+ return `
+
+ <div class="container">
             <div style="text-align:center">
 			<h1>${config.name}</h1>
 			</div>
@@ -550,50 +554,50 @@ function getRemoteHtml_partner(config){return `
 					Main navigation
 				</h2>
 				<ul>
-					<li id="power" class="myButton-partner"><a href="#" title="Power"><span>Power</span></a></li>
-					<li id="volmin" class="myButton-partner"><a href="#" title="Vol Min"><span>Vol Min</span></a></li>
-					<li id="volplus" class="myButton-partner"><a href="#" title="Vol Plus"><span>Vol Plus</span></a></li>
-					<li id="mute" class="myButton-partner"><a href="#" title="Vol Mute"><span>Vol Mute</span></a></li>
-					<li id="record" class="myButton-partner"><a href="#" title="record"><span>Vol record</span></a></li>
-					<li id="source" class="myButton-partner"><a href="#" title="Source"><span>Source</span></a></li>
+					<li id="power" class="myButton-${template}"><a href="#" title="Power"><span>Power</span></a></li>
+					<li id="volmin" class="myButton-${template}"><a href="#" title="Vol Min"><span>Vol Min</span></a></li>
+					<li id="volplus" class="myButton-${template}"><a href="#" title="Vol Plus"><span>Vol Plus</span></a></li>
+					<li id="mute" class="myButton-${template}"><a href="#" title="Vol Mute"><span>Vol Mute</span></a></li>
+					<li id="record" class="myButton-${template}"><a href="#" title="record"><span>Vol record</span></a></li>
+					<li id="source" class="myButton-${template}"><a href="#" title="Source"><span>Source</span></a></li>
 				</ul>
 
 				<ul>
-					<li id="section12"  class="myButton-partner""><a href="#" title="Section 12"><span>Section 12</span></a></li>
-					<li id="lastch"  class="myButton-partner""><a href="#" title="last ch"><span>lastch</span></a></li>
+					<li id="section12"  class="myButton-${template}""><a href="#" title="Section 12"><span>Section 12</span></a></li>
+					<li id="lastch"  class="myButton-${template}""><a href="#" title="last ch"><span>lastch</span></a></li>
 				</ul>
 
 				<ul>
-					<li class="myButton-partner" id="partner"><a href="#" title="partner"><span>partner</span></a></li>
-					<li class="myButton-partner" id="one"><a href="#" title="one"><span>one</span></a></li>
-					<li class="myButton-partner" id="two"><a href="#" title="two"><span>two</span></a></li>
-					<li class="myButton-partner" id="three"><a href="#" title="three"><span>three</span></a></li>
-					<li class="myButton-partner" id="four"><a href="#" title="four"><span>four</span></a></li>
-					<li class="myButton-partner" id="five"><a href="#" title="five"><span>five</span></a></li>
-					<li class="myButton-partner" id="six"><a href="#" title="six"><span>six</span></a></li>
-					<li class="myButton-partner" id="seven"><a href="#" title="seven"><span>seven</span></a></li>
-					<li class="myButton-partner" id="eight"><a href="#" title="eight"><span>eight</span></a></li>
-					<li class="myButton-partner" id="nine"><a href="#" title="nine"><span>nine</span></a></li>
-					<li class="myButton-partner" id="zero"><a href="#" title="zero"><span>zero</span></a></li>
-					<li class="myButton-partner" id="netflix"><a href="#" title="netflix"><span>netflix</span></a></li>
-					<li class="myButton-partner" id="fastforward"><a href="#" title="fastforward"><span>fastforward</span></a></li>
-					<li class="myButton-partner" id="rewind"><a href="#" title="rewind"><span>rewind</span></a></li>
-					<li class="myButton-partner" id="play"><a href="#" title="play"><span>play</span></a></li>
-					<li class="myButton-partner" id="vod"><a href="#" title="vod"><span>vod</span></a></li>
-					<li class="myButton-partner" id="myrec"><a href="#" title="myrec"><span>myrec</span></a></li>
-					<li class="myButton-partner" id="stop"><a href="#" title="stop"><span>stop</span></a></li>						
-					<li class="myButton-partner" id="youtube"><a href="#" title="youtube"><span>youtube</span></a></li>
-					<li class="myButton-partner" id="channelup"><a href="#" title="channel up"><span>channelup</span></a></li>
-					<li class="myButton-partner" id="channeldown"><a href="#" title="channel down"><span>channeldown</span></a></li>
-					<li class="myButton-partner" id="home"><a href="#" title="home"><span>home</span></a></li>
-					<li class="myButton-partner" id="menu"><a href="#" title="Menu"><span>Menu</span></a></li>
-					<li class="myButton-partner" id="back"><a href="#" title="Go back"><span>back</span></a></li>
-					<li class="myButton-partner" id="circle"><a href="#" title="circle"><span>circle</span></a></li>
-					<li class="myButton-partner" id="left"><a href="#" title="Left"><span>Left</span></a></li>
-					<li class="myButton-partner" id="right"><a href="#" title="right"><span>right</span></a></li>
-					<li class="myButton-partner" id="top"><a href="#" title="Top"><span>Top</span></a></li>
-					<li class="myButton-partner" id="bottom"><a href="#" title="Bottom"><span>Bottom</span></a></li>
-					<li class="myButton-partner" id="ok"><a href="#" title="OK"><span>OK</span></a></li>
+					<li class="myButton-${template}" id="${template}"><a href="#" title="partner"><span>partner</span></a></li>
+					<li class="myButton-${template}" id="one"><a href="#" title="one"><span>one</span></a></li>
+					<li class="myButton-${template}" id="two"><a href="#" title="two"><span>two</span></a></li>
+					<li class="myButton-${template}" id="three"><a href="#" title="three"><span>three</span></a></li>
+					<li class="myButton-${template}" id="four"><a href="#" title="four"><span>four</span></a></li>
+					<li class="myButton-${template}" id="five"><a href="#" title="five"><span>five</span></a></li>
+					<li class="myButton-${template}" id="six"><a href="#" title="six"><span>six</span></a></li>
+					<li class="myButton-${template}" id="seven"><a href="#" title="seven"><span>seven</span></a></li>
+					<li class="myButton-${template}" id="eight"><a href="#" title="eight"><span>eight</span></a></li>
+					<li class="myButton-${template}" id="nine"><a href="#" title="nine"><span>nine</span></a></li>
+					<li class="myButton-${template}" id="zero"><a href="#" title="zero"><span>zero</span></a></li>
+					<li class="myButton-${template}" id="netflix"><a href="#" title="netflix"><span>netflix</span></a></li>
+					<li class="myButton-${template}" id="fastforward"><a href="#" title="fastforward"><span>fastforward</span></a></li>
+					<li class="myButton-${template}" id="rewind"><a href="#" title="rewind"><span>rewind</span></a></li>
+					<li class="myButton-${template}" id="play"><a href="#" title="play"><span>play</span></a></li>
+					<li class="myButton-${template}" id="vod"><a href="#" title="vod"><span>vod</span></a></li>
+					<li class="myButton-${template}" id="myrec"><a href="#" title="myrec"><span>myrec</span></a></li>
+					<li class="myButton-${template}" id="stop"><a href="#" title="stop"><span>stop</span></a></li>						
+					<li class="myButton-${template}" id="youtube"><a href="#" title="youtube"><span>youtube</span></a></li>
+					<li class="myButton-${template}" id="channelup"><a href="#" title="channel up"><span>channelup</span></a></li>
+					<li class="myButton-${template}" id="channeldown"><a href="#" title="channel down"><span>channeldown</span></a></li>
+					<li class="myButton-${template}" id="home"><a href="#" title="home"><span>home</span></a></li>
+					<li class="myButton-${template}" id="menu"><a href="#" title="Menu"><span>Menu</span></a></li>
+					<li class="myButton-${template}" id="back"><a href="#" title="Go back"><span>back</span></a></li>
+					<li class="myButton-${template}" id="circle"><a href="#" title="circle"><span>circle</span></a></li>
+					<li class="myButton-${template}" id="left"><a href="#" title="Left"><span>Left</span></a></li>
+					<li class="myButton-${template}" id="right"><a href="#" title="right"><span>right</span></a></li>
+					<li class="myButton-${template}" id="top"><a href="#" title="Top"><span>Top</span></a></li>
+					<li class="myButton-${template}" id="bottom"><a href="#" title="Bottom"><span>Bottom</span></a></li>
+					<li class="myButton-${template}" id="ok"><a href="#" title="OK"><span>OK</span></a></li>
 				</ul>
 			</div>	
 		</div>
