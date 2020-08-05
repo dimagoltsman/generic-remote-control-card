@@ -292,6 +292,148 @@ buttons:
   ok: 
 ```
 
+Samsung TV remote:
+
+<img src="https://github.com/dimagoltsman/generic-remote-control-card/blob/master/samsungtvremote.png?raw=true" height="400">
+
+```
+buttons:
+  back:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  bottom:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button0:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button1:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button2:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button3:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button4:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button5:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button6:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button7:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button8:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  button9:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  buttonClear: null
+  buttonEnter: null
+  exit:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  info:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  left:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  menu:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  mute:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  ok:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  power:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  right:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  source:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  top:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  volmin:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+  volplus:
+    call: broadlink.send
+    data:
+      host: 192.168.1.234
+      packet: RF_CODE
+name: Samsung
+remote_template: samsungtv
+style: |
+  ha-card {
+    font-size: 10px;
+  }
+  h1{
+    text-align:left;
+    margin-left: 50px;
+  }
+type: 'custom:generic-remote-control-card'
+
+```
+
 Yes Remote (Design and codes by Rubinov lior):
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/yesremote.png" height="400">
