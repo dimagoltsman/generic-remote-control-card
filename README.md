@@ -19,73 +19,164 @@ All buttons are configured according to the id of the button in the html section
 simple remote example:
 
 ```
-type: 'custom:generic-remote-control-card'
-name: Hisense
-remote_template: simple
 buttons:
-  power:
-  source:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBYAAABKpITEhQQFRAVEBMSFBEUERMREzYWNBQ1FTQVNRQ1FRAVNRQREzYUEBUQFTUUERQRFBAVNRQRFDUVNBUREzYTNhQ2EwAFTgABKUcVAAxWAAEpRxQADQU="
-  button1:  
-  button2:  
-  button3:  
-  button4:  
-  button5:  
-  button6:  
-  button7:  
-  button8:  
-  button9:  
-  buttonClear:
-  button0:
-  buttonEnter:
-  exit:
-  info:
-  menu:
-  left:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKpIVEBMRFRAVEBUQFBEUERQREjcUNhM2EzYUNhM2FBAVNRQ1FRAVEBQ2EzYTERYPFRAVERM2EjcUEBUREzYUNRQ2FAAFTQABKUgUAA0FAAAAAAAAAAA="
-  right:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKZIUERQRExIUERMRFBEVEBQREzYVNBU1FDUUNRU1FBETNhUQFBEUERQ1FTQVERMSExEUNRU1FDUUERUQFDUUNhM2FAAFTgABKEgVAA0FAAAAAAAAAAA="
-  top:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKJIVERQRExIVDxQRFBEUERQREzYTNhU1FTQWMxU1FBETNhQRFDUUNRUQFTUUERMSFBAUNRURExIUNRQQFTUUNRM2FQAFTgABKEgVAA0FAAAAAAAAAAA="
-  bottom:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKZIUERMSEhIUERUQFBEUERMSEzYUNhM2FTQUNhM2FBAUNhQ1FTQVNRQRFDUUERUQExITEhQRFBAVNBURFDUVNBU1FAAFTQABKUgVAA0FAAAAAAAAAAA="
-  ok:
-    call: broadlink.send
-    data:
-      host: 192.168.1.171
-      packet: "JgBUAAkACXEAASiTFRAUERQRFBETEhQRExEUERU1FDUUNRU1FDUUNRYPEzcTNhQQFjQTEhU0Fg8UERQRFBEVNBQRFDYSEhQ1FTQVNRQABU4AASlIFAANBQAAAAA="
   back:
-  volplus:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgCgAJSSEg8QEBIPERAPMhEyDxERDxAxEDESLxAyEREPEREQEBAQlBARDxIQEBAREi8PMhEvEhAQMRExDzIREBARDhISDhAyEBEQEQ8REi8RAAdclJMRDxAREREPEREwEi8SEBARDzIQMhAwDzESEBARERAQEBKSEg8QEBAREREPMREyDjESDhIwETESLxEQEBEREBAQETAPERERERAQMRAADQUAAAAAAAAAAA=="
-  
-  volmin:
-    call: broadlink.send
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBgAAABJZEVEBITERMTEhMRExITEhISEjYUNhI3EzYTNhM1ExISNxQQFBETEhE4ExETEhM2EhISNxM2EzYTEhI3EzUUERM2EwAFOgABJ0gSAAwPAAEkSRMADA4AASVJEgANBQAAAAAAAAAA
+  bottom:
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgDgAJGUERAREA8RERERLxAyEBEQEBAyDjMRLxMwEBEOEg8RERAOlBMPEBEQEBEQEg8REBAQETIQMBEyEDAQEBIvEjEQMBIPDxIPEhEPETASAAdclJMSDhAREBEPEw8xEi8QERARDzEPMxEwETEQEBEREBASDhGTEg8RDxASEBEOERAQERARMBIwEi8RMhAQETEOMhExEBAREBARDxIPMhEAB1yWkRAQERAQERAREDESLxEREBARMBAxEDERMBEQEREOExAQEZIQERAQEhAQEQ0TEBEQEBExEDEQMBIwERARAA0FAAAAAAAAAAA="
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKZIUERMSEhIUERUQFBEUERMSEzYUNhM2FTQUNhM2FBAUNhQ1FTQVNRQRFDUUERUQExITEhQRFBAVNBURFDUVNBU1FAAFTQABKUgVAA0FAAAAAAAAAAA=
+  button0:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKpITERUQFRAUERQRFBETEhMRFTUUNRU0FTUTNhU0FRAVNRMSFBAVEBQRExIUERQRExEVNBU1FDUVNBU1FDUVNRQ1FAAFTgABKUgWAA0FAAAAAAAAAAA=
+  button1:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKJIVEBUSEhISEhQRFBEUEBUQFjQUNRU0FDYUNRQ2FBETNhQ1FBEUERQRExETEhUQFBEUERQ1EzYVNRQ1FTQVNRQ1FQAFTQABKUgUAA0FAAAAAAAAAAA=
+  button2:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKZIWDxQRFBEUERQRExEVEBQSEzYSNxQ2EzYSNxQ2ExEUNRUQFTUUERMRFBEVEBQRFBETNhMSFTQVNRQ1FTUTNhQ1FQAFTQABKUgTAA0FAAAAAAAAAAA=
+  button3:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKpITERUQFRAUEhMRFBEUERQQFTUUNRQ1FTUUNRU0FRAVNRQ1FTQVERMRExIVEBQQFRAVERQREzYUNRM3EjcTNhQ2EwAFTgABKUgVAA0FAAAAAAAAAAA=
+  button4:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKZIUERQRFBEUEBUQFRETERQRFDUUNhQ1FTQVNRQ1FBEUNhMRFBEUNRUQExIUERQRFBEUNRM3ExEUNRU1FDUUNRU1FAAFTQABKkcVAA0FAAAAAAAAAAA=
+  button5:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBUAAABKZIVEBITFBAVERQRExEUERQREzYUNhM2FDUUNhM2FQ8VNRQ1Fg8UNhQRExEVEBQRFRAUERQ1FBEUNRU1FDUVNBU1FQAFTAABKkcUAAFpCQANBQAAAAA=
+  button6:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKpITEhMRFBEWDxMRFREVEBMRFDUVNRQ1FTQWNBQ1Fg8WMxYQEzYSNxQRFBEVEBQRExEUNRURFBETNhM2FDYTNhU0FAAFTgABJ0kVAA0FAAAAAAAAAAA=
+  button7:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJ5MWEBQRFBETERQRFRAUERQRFDUTNhU1FDUVNBU1ExITNhQ2EzUVNRQRFBETEhQRFBAVEBYPFRATNhM2FDYUNRQ1FQAFTgABKEgUAA0FAAAAAAAAAAA=
+  button8:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJ5MVEBURExEUERQRFQ8VEBUQFDYUNRU0FDYTNhQ2ExEUNRUQFRAVERM2ExEUERUQFBETNhQ1FTUUERQ1FTQVNRU0FQAFTQABKUgTAA0FAAAAAAAAAAA=
+  button9:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKpIUERQQFRAWDxQRFBEUERQRFDUUNhM1FjQUNRQ1FBEUNhQ1FBEWDxQ2ExITERMSFBAVERM2FDUWDxQ2EjcUNRM3EgAFTwABKkcUAA0FAAAAAAAAAAA=
+  buttonClear: null
+  buttonEnter: null
+  exit:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJJMTEhISExEUERMSEhITERQREzYTNhM2EzYTNhM2ExEUNRMSExITNRQ2EjYUERM2ExETNhM3ERMTERMRFDYSEhM2EwAFOwABJ0cSAAwPAAElSBQADQU=
+  info:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKZMUEBUQExIUERMRFREUERMRFDUVNRQ1FDUVNRQ1FRAVNRQRExEUNRU1FBEUERMSFBAVMxc0FBEUERQ1FTUTNhQ2EwAFTgABKUcVAA0FAAAAAAAAAAA=
+  left:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKpIVEBMRFRAVEBUQFBEUERQREjcUNhM2EzYUNhM2FBAVNRQ1FRAVEBQ2EzYTERYPFRAVERM2EjcUEBUREzYUNRQ2FAAFTQABKUgUAA0FAAAAAAAAAAA=
+  menu:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKJMUERQREhMSEhUQFRAUERUQFjMVNBU1FDUUNhQ1FBEUNRQRFBEUNRUQFDYTEhISFBEVNBU1FBETNhQQFTUTNhU0FQAFTgABKEgVAA0FAAAAAAAAAAA=
   mute:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA==
+  ok:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBUAAkACXEAASiTFRAUERQRFBETEhQRExEUERU1FDUUNRU1FDUUNRYPEzcTNhQQFjQTEhU0Fg8UERQRFBEVNBQRFDYSEhQ1FTQVNRQABU4AASlIFAANBQAAAAA=
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKJIVERQRFBATEhQRFBAUEhQRFDUVNBU1EzYUNRQ2FBETNhQ2ExEUNRU1FBEUERQQFBEVEBU1ExEUERQ1FTUUNRQ1FQAFTQABKUgUAA0FAAAAAAAAAAA=
+  right:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKZIUERQRExIUERMRFBEVEBQREzYVNBU1FDUUNRU1FBETNhUQFBEUERQ1FTQVERMSExEUNRU1FDUUERUQFDUUNhM2FAAFTgABKEgVAA0FAAAAAAAAAAA=
+  source:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBcAAwABPwAASmSFRAVEBQRFBEUERMSFBAUERU1FDUVNBU1FDUVNBUREzYUEBU1ExIUERM2FBAUERUREzYTERQ2FDUTEhQ1FTUUNRQABU0AASpIEwAMVgABKUgUAA0FAAAAAAAAAAAAAAAA
+  top:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKJIVERQRExIVDxQRFBEUERQREzYTNhU1FTQWMxU1FBETNhQRFDUUNRUQFTUUERMSFBAUNRURExIUNRQQFTUUNRM2FQAFTgABKEgVAA0FAAAAAAAAAAA=
+  volmin:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgDgAJGUERAREA8RERERLxAyEBEQEBAyDjMRLxMwEBEOEg8RERAOlBMPEBEQEBEQEg8REBAQETIQMBEyEDAQEBIvEjEQMBIPDxIPEhEPETASAAdclJMSDhAREBEPEw8xEi8QERARDzEPMxEwETEQEBEREBASDhGTEg8RDxASEBEOERAQERARMBIwEi8RMhAQETEOMhExEBAREBARDxIPMhEAB1yWkRAQERAQERAREDESLxEREBARMBAxEDERMBEQEREOExAQEZIQERAQEhAQEQ0TEBEQEBExEDEQMBIwERARAA0FAAAAAAAAAAA=
+  volplus:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgCgAJSSEg8QEBIPERAPMhEyDxERDxAxEDESLxAyEREPEREQEBAQlBARDxIQEBAREi8PMhEvEhAQMRExDzIREBARDhISDhAyEBEQEQ8REi8RAAdclJMRDxAREREPEREwEi8SEBARDzIQMhAwDzESEBARERAQEBKSEg8QEBAREREPMREyDjESDhIwETESLxEQEBEREBAQETAPERERERAQMRAADQUAAAAAAAAAAA==
+name: Hisense
+remote_template: lg_new
+style: |
+  ha-card {
+    font-size: 10px;
+  }
+  h1{
+    text-align:left;
+    margin-left: 50px;
+  }
+type: 'custom:generic-remote-control-card'
 
 
 
@@ -100,17 +191,17 @@ name: LG Tv
 remote_template: simple
 buttons:
   power: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBYAAABKpIVEBURFDUWEBQRFBETEhURFDUVNRUQFTUVNRQ2FDUTNxQTExEUEhE3ExQTERMSFRITNRU1FDYUEhI3FDUVNRM3FQAFMwABKEoWAAxMAAEqSBUADQU="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBYAAABKpIVEBURFDUWEBQRFBETEhURFDUVNRUQFTUVNRQ2FDUTNxQTExEUEhE3ExQTERMSFRITNRU1FDYUEhI3FDUVNRM3FQAFMwABKEoWAAxMAAEqSBUADQU="
   
   
   source:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBYAAABJpMSExEUETgRFBEUERMSExITEjcSOBETEjgROBI4ETgSOBETEjgROBITEhMSEhM3ETgTNxITERMSOBE4EjgRExITEQAFGwABJkoSAAxGAAElSxIADQU="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBYAAABJpMSExEUETgRFBEUERMSExITEjcSOBETEjgROBI4ETgSOBETEjgROBITEhMSEhM3ETgTNxITERMSOBE4EjgRExITEQAFGwABJkoSAAxGAAElSxIADQU="
   
    
   button1:  
@@ -132,50 +223,50 @@ buttons:
   channelup:
   netflix:
   left: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKpIVEBMRFRAVEBUQFBEUERQREjcUNhM2EzYUNhM2FBAVNRQ1FRAVEBQ2EzYTERYPFRAVERM2EjcUEBUREzYUNRQ2FAAFTQABKUgUAA0FAAAAAAAAAAA="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBQAAABKpIVEBMRFRAVEBUQFBEUERQREjcUNhM2EzYUNhM2FBAVNRQ1FRAVEBQ2EzYTERYPFRAVERM2EjcUEBUREzYUNRQ2FAAFTQABKUgUAA0FAAAAAAAAAAA="
   right: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKZIUERQRExIUERMRFBEVEBQREzYVNBU1FDUUNRU1FBETNhUQFBEUERQ1FTQVERMSExEUNRU1FDUUERUQFDUUNhM2FAAFTgABKEgVAA0FAAAAAAAAAAA="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBQAAABKZIUERQRExIUERMRFBEVEBQREzYVNBU1FDUUNRU1FBETNhUQFBEUERQ1FTQVERMSExEUNRU1FDUUERUQFDUUNhM2FAAFTgABKEgVAA0FAAAAAAAAAAA="
  
   top: 
-  call: broadlink.send
+  call: remote.send_command
   data:
-    host: 192.168.1.171
-    packet: "JgBQAAABKJIVERQRExIVDxQRFBEUERQREzYTNhU1FTQWMxU1FBETNhQRFDUUNRUQFTUUERMSFBAUNRURExIUNRQQFTUUNRM2FQAFTgABKEgVAA0FAAAAAAAAAAA="
+    entity_id: remote.living_room_remote
+    command: "b64:JgBQAAABKJIVERQRExIVDxQRFBEUERQREzYTNhU1FTQWMxU1FBETNhQRFDUUNRUQFTUUERMSFBAUNRURExIUNRQQFTUUNRM2FQAFTgABKEgVAA0FAAAAAAAAAAA="
     
   bottom: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBQAAABKZIUERMSEhIUERUQFBEUERMSEzYUNhM2FTQUNhM2FBAUNhQ1FTQVNRQRFDUUERUQExITEhQRFBAVNBURFDUVNBU1FAAFTQABKUgVAA0FAAAAAAAAAAA="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBQAAABKZIUERMSEhIUERUQFBEUERMSEzYUNhM2FTQUNhM2FBAUNhQ1FTQVNRQRFDUUERUQExITEhQRFBAVNBURFDUVNBU1FAAFTQABKUgVAA0FAAAAAAAAAAA="
   
   ok: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBUAAkACXEAASiTFRAUERQRFBETEhQRExEUERU1FDUUNRU1FDUUNRYPEzcTNhQQFjQTEhU0Fg8UERQRFBEVNBQRFDYSEhQ1FTQVNRQABU4AASlIFAANBQAAAAA="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBUAAkACXEAASiTFRAUERQRFBETEhQRExEUERU1FDUUNRU1FDUUNRYPEzcTNhQQFjQTEhU0Fg8UERQRFBEVNBQRFDYSEhQ1FTQVNRQABU4AASlIFAANBQAAAAA="
   back:
   volplus: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBQAAABJZMTEhITETgSExEUERMSExITETgSOBITETgSNxM3ETgSOBEUETgRFBETEhMSExEUERMTNxISEzcROBM3ETgSOBI3EwAFGQABJkoSAA0FAAAAAAAAAAA="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBQAAABJZMTEhITETgSExEUERMSExITETgSOBITETgSNxM3ETgSOBEUETgRFBETEhMSExEUERMTNxISEzcROBM3ETgSOBI3EwAFGQABJkoSAA0FAAAAAAAAAAA="
   volmin: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgBYAAABJpMSExEUETgSExEUERMSExEUETgSOBMREjgROBI4ETgSNxI4EjgRExITERQRExITEhMRFBETEjgROBI4ETgSOBE4EQAFGwABJkoSAAxFAAEmShIADQU="
+      entity_id: remote.living_room_remote
+      command: "b64:JgBYAAABJpMSExEUETgSExEUERMSExEUETgSOBMREjgROBI4ETgSNxI4EjgRExITERQRExITEhMRFBETEjgROBI4ETgSOBE4EQAFGwABJkoSAAxFAAEmShIADQU="
   
   mute: 
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.171
-      packet: "JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
+      entity_id: remote.living_room_remote
+      command: "b64:JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
   
   
       
@@ -299,127 +390,127 @@ Samsung TV remote:
 ```
 buttons:
   back:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   bottom:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button0:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button1:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button2:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button3:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button4:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button5:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button6:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button7:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button8:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   button9:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   buttonClear: null
   buttonEnter: null
   exit:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   info:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   left:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   menu:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   mute:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   ok:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   power:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   right:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   source:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   top:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   volmin:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
   volplus:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.234
-      packet: RF_CODE
+      entity_id: remote.living_room_remote
+      command: RF_CODE
 name: Samsung
 remote_template: samsungtv
 style: |
@@ -445,235 +536,235 @@ remote_template: yesremote
 buttons:
   tvpower: null
   yespower:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJ5ISExISEjgSEhMSEhMRExM3EhISExI3EjgSNxM3ERMSExI3EhMSExETEhMSNxMSEhMRExI4EjcSOBI3EhMSNxI3EwAFYgABJUoTAAxCAAEmShIADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJ5ISExISEjgSEhMSEhMRExM3EhISExI3EjgSNxM3ERMSExI3EhMSExETEhMSNxMSEhMRExI4EjcSOBI3EhMSNxI3EwAFYgABJUoTAAxCAAEmShIADQU=
   amppower:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBUAE4UJxQTFCcUExQnFBMUExQTFBMUExQTFCcAAzxNFCcUExQnFBMUJxQTFBMUExQUFBMUExQnAAM7ThQmFBQTJxQTFCcUExQTFBQTFBQTFBMUJwANBQAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBUAE4UJxQTFCcUExQnFBMUExQTFBMUExQTFCcAAzxNFCcUExQnFBMUJxQTFBMUExQUFBMUExQnAAM7ThQmFBQTJxQTFCcUExQTFBQTFBQTFBMUJwANBQAAAAA=
   av:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBwAE4UJxQTFCcUExQTFCcUExQnFBMUExQTFBMAA0xOFCcUExQnFBMUExQnFBMUJxQTFBMUExQTAANMThQnFBMUJxQTFBMUJxQTFCYUFBQTFBMUEwADTE4UJxMUFCYUFBQTFCYUFBQmFBMUFBQTFBMADQUAAAAAAAAAAA==
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBwAE4UJxQTFCcUExQTFCcUExQnFBMUExQTFBMAA0xOFCcUExQnFBMUExQnFBMUJxQTFBMUExQTAANMThQnFBMUJxQTFBMUJxQTFCYUFBQTFBMUEwADTE4UJxMUFCYUFBQTFCYUFBQmFBMUFBQTFBMADQUAAAAAAAAAAA==
   button1:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJ5ISEhITEjgRExITERQRExI4EhISExI3EjgSNxM3EhITEhEUEhISExEUETgSNxMSEhMSNxI3EzcSNxMSERQROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJ5ISEhITEjgRExITERQRExI4EhISExI3EjgSNxM3EhITEhEUEhISExEUETgSNxMSEhMSNxI3EzcSNxMSERQROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
   button2:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMTEhISEjgSEhITEhMRExM3EhISExI3EzcSNxM3EhISExI3EhMSExE4EhMROBITERQRExI4EjcSExI3EhMSNxM3EgAFYgABJUoTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMTEhISEjgSEhITEhMRExM3EhISExI3EzcSNxM3EhISExI3EhMSExE4EhMROBITERQRExI4EjcSExI3EhMSNxM3EgAFYgABJUoTAA0FAAAAAAAAAAA=
   button3:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMSExETEjgRExITEhMSEhM3EhMRExM3EjcSNxM3EhITEhI3EhMSExE4EzcROBITEhISExI3EzcRFBISEhMROBM3EgAFYgABJUsRAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMSExETEjgRExITEhMSEhM3EhMRExM3EjcSNxM3EhITEhI3EhMSExE4EzcROBITEhISExI3EzcRFBISEhMROBM3EgAFYgABJUsRAA0FAAAAAAAAAAA=
   button4:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZQSEhITETgSExITERMSExI3EhMSExE4EzcSNxI3ExISExETEhMSExE4EhMROBITERMSOBI3EzcRExI4ERMSOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZQSEhITETgSExITERMSExI3EhMSExE4EzcSNxI3ExISExETEhMSExE4EhMROBITERMSOBI3EzcRExI4ERMSOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
   button5:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhMSEjcSExMSERMSExI4EhISExE4EzcSNxI4EhISExETEhMSExETEhMSOBISEhMROBI4ETgSNxM3EhMROBI3EgAFYwABJkkTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhMSEjcSExMSERMSExI4EhISExE4EzcSNxI4EhISExETEhMSExETEhMSOBISEhMROBI4ETgSNxM3EhMROBI3EgAFYwABJkkTAA0FAAAAAAAAAAA=
   button6:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMTEhITETgSExETEhMSExE4ExISEhI4EjcTNxE4EhMSEhITEhMRExI4EjcSOBETExISNxI4EjcTEhETEhMSNxM3EgAFYgABJkoRAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMTEhITETgSExETEhMSExE4ExISEhI4EjcTNxE4EhMSEhITEhMRExI4EjcSOBETExISNxI4EjcTEhETEhMSNxM3EgAFYgABJkoRAA0FAAAAAAAAAAA=
   button7:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMSExETEzcSEhITEhMRExI4EhMRExI4ETgSNxM3EhITEhITETgSExEUETgSNxMSEhMROBITETgTNhMSEhMSNxM3EgAFYgABJUsSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMSExETEzcSEhITEhMRExI4EhMRExI4ETgSNxM3EhITEhITETgSExEUETgSNxMSEhMROBITETgTNhMSEhMSNxM3EgAFYgABJUsSAA0FAAAAAAAAAAA=
   button8:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMTEhITETgTEhISEhMSExE4EhMRFBE4EjcTNxI3EhMSEhITEzcSEhM3EhISOBISEhMSNxMSEjcTEhI4EhISOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMTEhITETgTEhISEhMSExE4EhMRFBE4EjcTNxI3EhMSEhITEzcSEhM3EhISOBISEhMSNxMSEjcTEhI4EhISOBI3EgAFYgABJkoSAA0FAAAAAAAAAAA=
   button9:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhMSEjcTEhITERQSEhM3EhISExI3EzcROBM2ExISExETEzcSExETExISNxMSEhMSNxITETgTNhM3EhMROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhMSEjcTEhITERQSEhM3EhISExI3EzcROBM2ExISExETEzcSExETExISNxMSEhMSNxITETgTNhM3EhMROBI3EwAFYgABJUoTAA0FAAAAAAAAAAA=
   button0:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMTEhEUETgSExETEhMSExE4EhMRExM3ETgSOBI3EhMRExI4ETgTEhETEjgROBITEhMSEhITEjcTNxETEhMSNxM3EQAFYwABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMTEhEUETgSExETEhMSExE4EhMRExM3ETgSOBI3EhMRExI4ETgTEhETEjgROBITEhMSEhITEjcTNxETEhMSNxM3EQAFYwABJkoSAA0FAAAAAAAAAAA=
   vod:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhMSEjcTEhITEhITEhI3EhMSExI3EjgSNxI3ExISExI3EhMSEhMSEhMSEhMSEhMSEhI4EjcSOBE4EzYSOBI3EwAFYQABJ0kTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhMSEjcTEhITEhITEhI3EhMSExI3EjgSNxI3ExISExI3EhMSEhMSEhMSEhMSEhMSEhI4EjcSOBE4EzYSOBI3EwAFYQABJ0kTAA0FAAAAAAAAAAA=
   mytv:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZQRExITETgSExEUERMSExE4EhMSExE4EjgTNhE4EhMSExETEjgSEhITEhMRExI4ERQROBEUEjcSNxI4ETgSExE4FAAFYAABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZQRExITETgSExEUERMSExE4EhMSExE4EjgTNhE4EhMSExETEjgSEhITEhMRExI4ERQROBEUEjcSNxI4ETgSExE4FAAFYAABJkoSAA0FAAAAAAAAAAA=
   volumeup: null
   volumedown: null
   channelup:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJpITEhITETgSExITERMSExI3EhMSExE4EjcTNxE4EhMSExE4EhMROBITEjcSOBISExISExE4EhMROBITERMSOBE4EwAFYQABJkoSAAxDAAEmSRMADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJpITEhITETgSExITERMSExI3EhMSExE4EjcTNxE4EhMSExE4EhMROBITEjcSOBISExISExE4EhMROBITERMSOBE4EwAFYQABJkoSAAxDAAEmSRMADQU=
   channeldown:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABKJESExMREjgRExQREhMTERI4ExESExM2EjgSNxI4EhISExI3EjgROBITETgSOBETEhMSExETExISNxITEhMROBM3EgAFYgABJUoTAAxCAAElSxEADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABKJESExMREjgRExQREhMTERI4ExESExM2EjgSNxI4EhISExI3EjgROBITETgSOBETEhMSExETExISNxITEhMROBM3EgAFYgABJUoTAAxCAAElSxEADQU=
   mute:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgCoAE4UExQUFCYUExQnFBQTExUmFBMUFRIUFBUAA11OFBQTFhImFBQTKRIUExQUJhQTFBQUExQTAANfThQTFBMUJxQTFCcUExQTFCcUExQTFBQUEwADX04UExQTFCcUExQnFBMUExQnFBMUExQTFBQAA19OFBMUExQnFBMUJxQTFBMUJxQTFBQTExQTAANgThQTFBMUJxQUEycUExQTFCcUExQTFBMUEwANBQ==
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgCoAE4UExQUFCYUExQnFBQTExUmFBMUFRIUFBUAA11OFBQTFhImFBQTKRIUExQUJhQTFBQUExQTAANfThQTFBMUJxQTFCcUExQTFCcUExQTFBQUEwADX04UExQTFCcUExQnFBMUExQnFBMUExQTFBQAA19OFBMUExQnFBMUJxQTFBMUJxQTFBQTExQTAANgThQTFBMUJxQUEycUExQTFCcUExQTFBMUEwANBQ==
   return:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJZMTEhEUETgSExETExISExE4EhMRExI4EjcSOBI3EhMRExITEjcSExI3EjgSNxITEhMROBITETgSExETEhMSNxI4EQAFYwABJUsSAAxCAAEmShIADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJZMTEhEUETgSExETExISExE4EhMRExI4EjcSOBI3EhMRExITEjcSExI3EjgSNxITEhMROBITETgSExETEhMSNxI4EQAFYwABJUsSAAxCAAEmShIADQU=
   clickleft:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpITEhITETgSExITEhISExE4ExISExE4EjcSOBE4ExISExEUERMSNxITEjcSOBISEhMSOBE4ERQROBITERMTNxI3EgAFYgABJ0kSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpITEhITETgSExITEhISExE4ExISExE4EjcSOBE4ExISExEUERMSNxITEjcSOBISEhMSOBE4ERQROBITERMTNxI3EgAFYgABJ0kSAA0FAAAAAAAAAAA=
   clickright:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhMSEjcSExITERQRExI4ERMSExE4EjgROBI4ERMSExE4EjgSEhI4ETgTNxISEhMSExETEjgSEhITEhMROBI4EgAFYQABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhMSEjcSExITERQRExI4ERMSExE4EjgROBI4ERMSExE4EjgSEhI4ETgTNxISEhMSExETEjgSEhITEhMROBI4EgAFYQABJkoSAA0FAAAAAAAAAAA=
   clickup:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMTEhEUETgSExETEhMSExE4ExIRExI4ETgSOBE4EhMRExI4EjcTEhE4ExIROBMSEhMRExITETgTEhI3ExISOBE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMTEhEUETgSExETEhMSExE4ExIRExI4ETgSOBE4EhMRExI4EjcTEhE4ExIROBMSEhMRExITETgTEhI3ExISOBE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
   clickdown:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJpMRExITEjcSExITERMSExI4ERMSExI3EjgROBI3EhMTEhETExISOBETEhMROBITEhMROBI3ExITNhI4EhMROBI3EgAFYwABJUoTAAxCAAElSxIADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJpMRExITEjcSExITERMSExI4ERMSExI3EjgROBI3EhMTEhETExISOBETEhMROBITEhMROBI3ExITNhI4EhMROBI3EgAFYwABJUoTAAxCAAElSxIADQU=
   plus:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABKJMSEhITEjcTEhMSEhMRExI4ERMSExI3EzcSNxI4ERMTEhEUEhISOBI3EjcSOBEUERMSOBE4EhMRExITEhMROBI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABKJMSEhITEjcTEhMSEhMRExI4ERMSExI3EzcSNxI4ERMTEhEUEhISOBI3EjcSOBEUERMSOBE4EhMRExITEhMROBI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
   info:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJZMSExEUETgSExETEhMSExE4EhMRExM3ETgSOBE4EhMRExITEhMSNxI4ERMSOBETEhMROBM3ERMSExI3EhMSOBE4EgAFYgABJkoSAAxDAAElShIADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJZMSExEUETgSExETEhMSExE4EhMRExM3ETgSOBE4EhMRExITEhMSNxI4ERMSOBETEhMROBM3ERMSExI3EhMSOBE4EgAFYgABJkoSAAxDAAElShIADQU=
   ok:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4ETgSOBE4EhMRExI4ETgSExEUERMSOBETEhMRFBETEjgROBI3EhMSOBE4EQAFYwABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4ETgSOBE4EhMRExI4ETgSExEUERMSOBETEhMRFBETEjgROBI3EhMSOBE4EQAFYwABJkoSAA0FAAAAAAAAAAA=
   table:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhITEjcSExEUERMTEhI3EhMSExE4EjgSNxI3EhMSExETEjgROBITETgTNxETEhMSNxITEhMSNxITERQROBE4EgAFYwABJUoTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhITEjcSExEUERMTEhI3EhMSExE4EjgSNxI3EhMSExETEjgROBITETgTNxETEhMSNxITEhMSNxITERQROBE4EgAFYwABJUoTAA0FAAAAAAAAAAA=
   schedule:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBYAAABJpMRExITETgSExITERMSExI3ExISExI3EjgSNxI3EhMSExETEjgSNxI4ERMSOBETEhMSNxITEhMRExM3ERMSOBE4EgAFYwABJUoTAAxCAAElSxEADQU=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBYAAABJpMRExITETgSExITERMSExI3ExISExI3EjgSNxI3EhMSExETEjgSNxI4ERMSOBETEhMSNxITEhMRExM3ERMSOBE4EgAFYwABJUoTAAxCAAElSxEADQU=
   orange:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZQSEhMSEjcSExITEhISExM2EhMTEhE4EjgSNxE4EhMSExETEjgROBM3ETgSNxMSEhMROBMSERQRExITEhISOBI3EwAFYAABJ0oSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZQSEhMSEjcSExITEhISExM2EhMTEhE4EjgSNxE4EhMSExETEjgROBM3ETgSNxMSEhMROBMSERQRExITEhISOBI3EwAFYAABJ0oSAA0FAAAAAAAAAAA=
   green:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpISExETEzcRExITEhMRExI4EhISExI4EjcSNxM3ERMSExI4ERMSOBE4EhMROBITERMSExI3EhMSExE4EhMROBM3EQAFYwABJUsRAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpISExETEzcRExITEhMRExI4EhISExI4EjcSNxM3ERMSExI4ERMSOBE4EhMROBITERMSExI3EhMSExE4EhMROBM3EQAFYwABJUsRAA0FAAAAAAAAAAA=
   yellow:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4EjcSOBI3EhMRExI4ERQSNxE4EzcSNxITERMSExI4ERMSExITERMTNxE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpITEhITETgSExETEhMSExE4EhMRExI4EjcSOBI3EhMRExI4ERQSNxE4EzcSNxITERMSExI4ERMSExITERMTNxE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
   blue:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZQRExITETgSExITERMTEhM2EhMSExI3EjgROBI3ExISExE4EjgSNxI4EjcSNxMSERQRExITEhMSEhITERQSNxE4EgAFYwABJUoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZQRExITETgSExITERMTEhM2EhMSExI3EjgROBI3ExISExE4EjgSNxI4EjcSNxMSERQRExITEhMSEhITERQSNxE4EgAFYwABJUoSAA0FAAAAAAAAAAA=
   rewind:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMRFBETEzcRExMSEhMRExI4EhITEhI3EjgSNxM3EhISExITERMSExI3ExISExE4EhMSNxI4ETgWDxI3EjcTEhI4EQAFYwABJkoRAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMRFBETEzcRExMSEhMRExI4EhITEhI3EjgSNxM3EhISExITERMSExI3ExISExE4EhMSNxI4ETgWDxI3EjcTEhI4EQAFYwABJkoRAA0FAAAAAAAAAAA=
   play:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhITEjcTEhITERMSExI4ERMSExE4EjgROBI3EhMSExE4EhMSNxMSEhMRExI4ERMSExI3EhMTNxE4EjcSExI3EgAFYwABJUoTAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhITEjcTEhITERMSExI4ERMSExE4EjgROBI3EhMSExE4EhMSNxMSEhMRExI4ERMSExI3EhMTNxE4EjcSExI3EgAFYwABJUoTAA0FAAAAAAAAAAA=
   forward:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMTEhITETgTEhISEhMTEhE4ExIRFBE4EjcTNxI3EhMRFBE4EhMRExI4ERMTEhI3EhMSExI3EzcSEhI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMTEhITETgTEhISEhMTEhE4ExIRFBE4EjcTNxI3EhMRFBE4EhMRExI4ERMTEhI3EhMSExI3EzcSEhI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
   rec:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMRExMSEjcSExITERMSExI3EhMSExI3EzcROBI3EhMSExETEhMSNxMSEhMRExM3ERMSOBE4ExISNxI4ETgSExE4EwAFYgABJUoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMRExMSEjcSExITERMSExI3EhMSExI3EzcROBI3EhMSExETEhMSNxMSEhMRExM3ERMSOBE4ExISNxI4ETgSExE4EwAFYgABJUoSAA0FAAAAAAAAAAA=
   stop:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJpMSEhMSEzcSEhITERQRExI4EhISExI3EjgSNxI4EhISExE4EjgROBITERQRExI4ERMTEhEUERMSOBE4EjcSExI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJpMSEhMSEzcSEhITERQRExI4EhISExI3EjgSNxI4EhISExE4EjgROBITERQRExI4ERMTEhEUERMSOBE4EjcSExI3EgAFYwABJUoSAA0FAAAAAAAAAAA=
   pause:
-    call: broadlink.send
+    call: remote.send_command
     data:
-      host: 192.168.1.160
-      packet: >-
-        JgBQAAABJZMSExITETgTEhETEhMSExE4EhMRExI4EjcSOBE4EhMRExITEzYSOBEUEhISExE4EhMSNxITEhMROBI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
+      entity_id: remote.living_room_remote
+      command: >-
+        b64:JgBQAAABJZMSExITETgTEhETEhMSExE4EhMRExI4EjcSOBE4EhMRExITEzYSOBEUEhISExE4EhMSNxITEhMROBI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
 
 ```
 
