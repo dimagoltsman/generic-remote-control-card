@@ -11,6 +11,7 @@ resources:
 ```
 
 
+# From HA version 0.115.0, broadlkink integration changed. you have to change card configuration. this readme is updated to the new version #
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
