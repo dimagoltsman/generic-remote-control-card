@@ -400,52 +400,52 @@ buttons:
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button0:
+  zero:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button1:
+  one:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button2:
+  two:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button3:
+  three:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button4:
+  four:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button5:
+  five:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button6:
+  six:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button7:
+  seven:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button8:
+  eight:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: RF_CODE
-  button9:
+  nine:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
