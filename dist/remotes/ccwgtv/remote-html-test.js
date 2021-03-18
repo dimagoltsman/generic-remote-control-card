@@ -38,95 +38,60 @@ function getRemoteStyle_ccwgtv(config) {
 	list-style-type: none
 }
 
-#power a,
-#source a,
-#volumeup a,
-#volumedown a,
+#top a,
+#bottom a,
+#ok a {
+	position: absolute;
+	display: block
+},
 #clickleft a,
 #clickright a,
-#mute a,
+#volumeup a,
+#volumedown a,
+#back a,
 #assistant a,
 #mute a,
 #youtube a,
 #netflix a,
 #info a,
 #home a,
-#back a,
-#top a,
-#bottom a,
-#ok a {
-	position: absolute;
-	display: block
-}
+#power a,
+#source a
 
-#remote-control-ccwgtv li#power a {
-	left: 30px;
-	top: 390px;
-	width: 30px;
-	height: 27px;
-	background: url(${base_url}/power.png) no-repeat
-}
-
-#remote-control-ccwgtv li#power a:hover {
-	background-image: url(${base_url}/power_over.png);
-	background-repeat: no-repeat;
-	background-position: 0 0px
-}
-
-#remote-control-ccwgtv li#source a {
-	left: 105px;
-	top: 390px;
-	width: 30px;
-	height: 27px;
-	background: url(${base_url}/source.png) no-repeat
-}
-
-#remote-control-ccwgtv li#source a:hover {
-	background-image: url(${base_url}/source_over.png);
-	background-repeat: no-repeat;
-	background-position: 0 0px
-}
-
-#remote-control-ccwgtv li#assistant a {
-	left: 105px;
-	top: 150px;
-	width: 47px;
-	height: 41px;
-	background: url(${base_url}/assistant.png) no-repeat
-}
-
-#remote-control-ccwgtv li#assistant a:hover {
-	background-image: url(${base_url}/assistant_over.png);
-	background-repeat: no-repeat;
-	background-position: 0 0px
-}
-
-#remote-control-ccwgtv li#volumeup a {
-	left: 155px;
-	top: 120px;
+#remote-control-ccwgtv li#top a {
+	left: 69px;
+	top: 20px;
 	width: 29px;
-	height: 30px;
-	background: url(${base_url}/volume.png) no-repeat
+	height: 29px;
+	background: url(${base_url}/top.png) no-repeat 0px 0px
 }
 
-#remote-control-ccwgtv li#volumeup a:hover {
-	background-image: url(${base_url}/volume_over.png);
-	background-repeat: no-repeat;
-	background-position: 0 0px
+#remote-control-ccwgtv li#top a:hover {
+	background: url(${base_url}/top_over.png) no-repeat 0px 0px
 }
 
-#remote-control-ccwgtv li#volumedown a {
-	left: 155px;
-	top: 150px;
+#remote-control-ccwgtv li#bottom a {
+	left: 68px;
+	top: 117px;
 	width: 29px;
-	height: 30px;
-	background: url(${base_url}/volumedown.png) no-repeat
+	height: 29px;
+	background: url(${base_url}/bottom.png) no-repeat 0px 0px
 }
 
-#remote-control-ccwgtv li#volumedown a:hover {
-	background-image: url(${base_url}/volumedown_over.png);
-	background-repeat: no-repeat;
-	background-position: 0 0px
+#remote-control-ccwgtv li#bottom a:hover {
+	background: url(${base_url}/bottom_over.png) no-repeat 0px 0px
+}
+
+#remote-control-ccwgtv li#ok a {
+	left: 68px;
+	top: 68px;
+	width: 29px;
+	height: 29px;
+	background: url(${base_url}/ok.png) no-repeat 0px 0px
+}
+
+#remote-control-ccwgtv li#ok a:hover {
+	background: url(${base_url}/ok_over.png) no-repeat 0px 0px
 }
 
 #remote-control-ccwgtv li#clickleft a {
@@ -157,12 +122,70 @@ function getRemoteStyle_ccwgtv(config) {
 	background-position: 0 0px
 }
 
+#remote-control-ccwgtv li#volumeup a {
+	left: 120px;
+	top: 120px;
+	width: 29px;
+	height: 30px;
+	background: url(${base_url}/volume.png) no-repeat
+}
+
+#remote-control-ccwgtv li#volumeup a:hover {
+	background-image: url(${base_url}/volume_over.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px
+}
+
+#remote-control-ccwgtv li#volumedown a {
+	left: 120px;
+	top: 150px;
+	width: 29px;
+	height: 30px;
+	background: url(${base_url}/volumedown.png) no-repeat
+}
+
+#remote-control-ccwgtv li#volumedown a:hover {
+	background-image: url(${base_url}/volumedown_over.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px
+}
+
+#remote-control-ccwgtv li#back a {
+	left: 22px;	
+	top: 170px;
+	width: 28px;
+	height: 29px;	
+	background: url(${base_url}/go_back.png) no-repeat 0px 0px
+}
+
+#remote-control-ccwgtv li#back a:hover {
+	background: url(${base_url}/go_back_over.png) no-repeat 0px 0px
+}
+
+#remote-control-ccwgtv li#assistant a {
+	left: 105px;
+	top: 150px;
+	width: 47px;
+	height: 41px;
+	background: url(${base_url}/assistant.png) no-repeat
+}
+
+#remote-control-ccwgtv li#assistant a:hover {
+	background-image: url(${base_url}/assistant_over.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px
+}
+
 #remote-control-ccwgtv li#home a {
 	left: 22px;
 	top: 248px;
 	width: 29px;
 	height: 30px;
 	background: url(${base_url}/home.png) no-repeat 0px 0
+}
+
+#remote-control-ccwgtv li#home a:hover {
+	background: url(${base_url}/home_over.png) no-repeat 0px 0px
 }
 
 #remote-control-ccwgtv li#mute a {
@@ -177,14 +200,6 @@ function getRemoteStyle_ccwgtv(config) {
 	background-image: url(${base_url}/mute_over.png);
 	background-repeat: no-repeat;
 	background-position: 0 0px
-}
-
-#remote-control-ccwgtv li#back a {
-	left: 22px;	
-	top: 170px;
-	width: 28px;
-	height: 29px;	
-	background: url(${base_url}/go_back.png) no-repeat 0px 0px
 }
 
 #remote-control-ccwgtv li#youtube a {
@@ -215,58 +230,41 @@ function getRemoteStyle_ccwgtv(config) {
 	background-position: 0 0px
 }
 
-#remote-control-ccwgtv li#top a {
-	left: 69px;
-	top: 20px;
-	width: 29px;
-	height: 29px;
-	background: url(${base_url}/top.png) no-repeat 0px 0px
+#remote-control-ccwgtv li#power a {
+	left: 30px;
+	top: 390px;
+	width: 30px;
+	height: 27px;
+	background: url(${base_url}/power.png) no-repeat
 }
 
-#remote-control-ccwgtv li#bottom a {
-	left: 68px;
-	top: 117px;
-	width: 29px;
-	height: 29px;
-	background: url(${base_url}/bottom.png) no-repeat 0px 0px
+#remote-control-ccwgtv li#power a:hover {
+	background-image: url(${base_url}/power_over.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px
 }
 
-#remote-control-ccwgtv li#ok a {
-	left: 68px;
-	top: 68px;
-	width: 29px;
-	height: 29px;
-	background: url(${base_url}/ok.png) no-repeat 0px 0px
+#remote-control-ccwgtv li#source a {
+	left: 105px;
+	top: 390px;
+	width: 30px;
+	height: 27px;
+	background: url(${base_url}/source.png) no-repeat
 }
 
-
-#remote-control-ccwgtv li#home a:hover {
-	background: url(${base_url}/home_over.png) no-repeat 0px 0px
+#remote-control-ccwgtv li#source a:hover {
+	background-image: url(${base_url}/source_over.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px
 }
 
-#remote-control-ccwgtv li#back a:hover {
-	background: url(${base_url}/go_back_over.png) no-repeat 0px 0px
-}
-
-#remote-control-ccwgtv li#top a:hover {
-	background: url(${base_url}/top_over.png) no-repeat 0px 0px
-}
-
-#remote-control-ccwgtv li#bottom a:hover {
-	background: url(${base_url}/bottom_over.png) no-repeat 0px 0px
-}
-
-#remote-control-ccwgtv li#ok a:hover {
-	background: url(${base_url}/ok_over.png) no-repeat 0px 0px
-}
-    
   `;
 }
 
 function getRemoteHtml_ccwgtv(config){
  const template = config.remote_template;
  return `
-    
+
  <div class="container">
             <div style="text-align:center">
 			<h1>${config.name}</h1>
@@ -287,7 +285,7 @@ function getRemoteHtml_ccwgtv(config){
 					<li id="netflix" class="myButton-${template}"><a href="#" title="Start Netflix"><span>netflix</span></a></li>
 					<li id="source" class="myButton-${template}"><a href="#" title="Select Input Source"><span>source</span></a></li>
 					<li id="clickleft" class="myButton-${template}"><a href="#" title="clickleft"><span>clickleft</span></a></li>
-					<li id="clickright" class="myButton-${template}"><a href="#" title="clickright"><span>clickright</span></a></li>	
+					<li id="clickright" class="myButton-${template}"><a href="#" title="clickright"><span>clickright</span></a></li>
 				</ul>
 
 
