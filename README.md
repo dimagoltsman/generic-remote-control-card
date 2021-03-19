@@ -336,6 +336,97 @@ type: 'custom:generic-remote-control-card'
 
 ```
 
+Google Chromecast with Google TV Remote example, with ADB server.
+(remote design by @FaserF & @KaiSMR) <br /> 
+<img src="ccwgtv.png" height="400">
+
+```
+buttons:
+  top:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 19
+  bottom:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 20
+  ok:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 66
+  clickleft:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 21
+  clickright:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 22
+  volumedown:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 25
+  volumeup:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 24
+  back:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 4
+  assistant:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: am start -a android.intent.action.VIEW -d -n com.google.android.apps.tv.launcherx/.home.HomeActivity
+  mute:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 164
+  youtube:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      #Official YouTube TV
+      command: am start -a android.intent.action.VIEW -d -n com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity
+      #SmartTubeNext
+      #command: am start -a android.intent.action.VIEW -d -n com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.browse.BrowseActivity
+  netflix:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: am start -a android.intent.action.VIEW -d -n *com.netflix.ninja/.MainActivity
+  home:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 3
+  power:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.chromecast
+      command: input keyevent 26
+  #Source doesnt work yet. We have no clue how to send a input source command via adb
+  #source:
+  #  call: androidtv.adb_command
+  #  data:
+  #    entity_id: media_player.chromecast
+  #    command: ???
+name: Chromecast with Google TV
+remote_template: ccwgtv
+type: 'custom:generic-remote-control-card'
+
+```
+
 PartnerTV Remote example, thanx to @VirtualL :
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/partner/remote-screen-shot.png?raw=true" height="400">
