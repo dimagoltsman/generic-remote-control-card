@@ -337,7 +337,9 @@ type: 'custom:generic-remote-control-card'
 ```
 
 Google Chromecast with Google TV Remote example, with ADB server.
-(remote design by [FaserF][https://github.com/FaserF])
+(remote design by [FaserF] & [KaiSMR])
+[FaserF]: https://github.com/FaserF/
+[KaiSMR]: https://github.com/KaiSMR/
 <img src="ccwgtv.png" height="400">
 
 ```
@@ -415,6 +417,7 @@ buttons:
     data:
       entity_id: media_player.chromecast
       command: input keyevent 26
+  #Source doesnt work yet. We have no clue how to send a input source command via adb
   #source:
   #  call: androidtv.adb_command
   #  data:
