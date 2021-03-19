@@ -337,9 +337,7 @@ type: 'custom:generic-remote-control-card'
 ```
 
 Google Chromecast with Google TV Remote example, with ADB server.
-(remote design by [FaserF] & [KaiSMR])
-[FaserF]: https://github.com/FaserF/
-[KaiSMR]: https://github.com/KaiSMR/
+(remote design by @FaserF & @KaiSMR) <br /> 
 <img src="ccwgtv.png" height="400">
 
 ```
