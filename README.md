@@ -485,124 +485,162 @@ buttons:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKWDzsQOhA6EBUPFhAVEBUQFQ87EDoSOBAVEBUPFhITEBUQFREUERQQOhA6EBUQOhAVEDoQOhA6ERQQFRE5EBUPOxEADQUAAA==
   bottom:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBEAJCWCEQNPQ09DRkMFw8YDRoKGA09DUEKPQwXDjsPGgoZCz8OIQYUDhgNHAk8DEEMFgscDTwNOw9BCkAJFg8YDTwOAA0FAAAAAA==
   zero:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVETkRORA7EBQSExEVDxUQFg87DzsTNw8WERQPFhAVDxYPOxAVEBUPFg87DxYRFBAVDxcPOhA6EDoQFRA6ETkQOhAADQUAAA==
   one:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJOUETkSOBE5ERQRFBEUEBUQFRE5ETkROREVDxUQFhAWDhYPFhITEDoPFg8VEBYPFg8WEDoQOhAVETkQOhA6EDoQOg8ADQUAAA==
   two:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVETkRORE5ERQQFREUERQRFBA6EjgTNxAWEBUQFRAVEBUPOxAVEDoPFhAVDxYQFRAVEBUQOhEUEDoQOhA6DzsQOhAADQUAAA==
   three:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKWDzsQOg87EBUQFQ8WEBUQFRA6DzsQOg8WDxYQFRAVDxYQFRA6EDoQFRAVEBURFA8WEDoRFBEUEDoPOxA6EDoPOxAADQUAAA==
   four:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKWEDoSOBA6EBUQFQ8WEBUPFg87EDoQOhAVEBUQExQTEBURFBAVEBUROREUEBURFBEUEDoRORE5EBUSOBE5ETkQOhEADQUAAA==
   five:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVETkRORE5EBUQFRAVEBUSExE5ETkROREUEBURFBAVEBURORITEBUSOBEUERQQFREUExIQOhE5EBURORE5EjgQOhEADQUAAA==
   six:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVEDoQOhE5EBURFBEUERQQFRA6ETkQOhEUEBUQFREUERQRFBE5ERQQOhAVEBUQFREUETkRFBE5EhMQOhE5ETkROREADQUAAA==
   seven:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVETkROhE5DxURFQ8WERQQFRA6EDoQOhEUDxYPFg8WEBUQFREUDzsRORAVEBUQFRAVEDoSOBITERQRORE5EDoTNxEADQUAAA==
   eight:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJOUETkRORE5EhMRFBAVEBUQFRA6EzcRORIUDxUQFRAVERQQOhAVEDoQOw8WEBQRFQ8WEBUQORIUEBURORA6EDoQOg8ADQUAAA==
   nine:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
-  buttonClear: null
-  buttonEnter: null
+      command: b64:JgBGAJKVETkTNxE5ERQRFBEUERQQFRE5EDoROREUERQRFBEUDxYQFRA6ETkRORAVDxYPFhAVDzsRFBAVEBUQOhA6EDoQOg8ADQUAAA==
   exit:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgCMAJOTEjcTNxI3EhMSEhITEhMRExI3EjcSOBISEhMSExETEhMSNxITEjcSNxITEjcSExETEhMSNxITEhISNxITEjcSOBEABfuTlBI3EjcSOBETEhMSEhITEhMROBI3EjcSExITERMSExISEjgRExI3EjcSExI3EhMSExISEjgRExITEjcSExE4EjcSAA0FAAAAAAAAAAAAAAAA
   info:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgCMAJSSEjgROBI3EhMRExITEhMRExI3EjgROBISEhMSExETEhMSNxI3EjgROBI3EhMRExITEhMRExITERMSExI3EjcSOBEABfuTlBI3EjcSOBETEhMSExETEhMSNxI3EjcSExITEhISExITETgSNxI3EjcSOBISEhMSExETEhMSExETEhMROBI3EjcSAA0FAAAAAAAAAAAAAAAA
   left:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBAAB4FBAgJDgsQDRATnwiKCEEKFwYgDEEJYg2yCBgNGQwfBiAHPQeLCB4LiwoaCRwJQgofB0AKPwgdChsKPwkADQUAAAAAAAAAAA==
   menu:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVEDoRORE5ERQQFREUERQRFBE5ETkQOhEUERQQFRAVERQRFBA6ERQRORA6ERQQFRAVETkQFRE5EBUQFRA6EDoROREADQUAAA==
   mute:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJGWEDoQOhA6EBUQFREUEBURFBA6ETkRORITERQRFBEUEBURORE5ETkROREUERQTEhEUEBYPFhAVEBUQOg87EDoQOg8ADQUAAA==
   ok:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJGXDzwMPQ49DhUQFg8WDxYQFBE6ETkPOhAWEBUPFg8WDxYQFQ8WEBYOOhAWDzsSOA8WDzsQOxA4ERUPOxAVDxYQOg8ADQUAAA==
   power:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVDzsQOhA6EBUQFRAVERQRFBE5EDoSOBEUERQRFBAVEBURFBE5ERQRFBAVERQRFBEUETkRFBE5ETkRORE5EToQOg8ADQUAAA==
   right:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAI2YEDsMPw47DhgOFQ8YDhcNFw47DzsPPBEVDRcOFhAVEBcPFBE5EBYMGQ8WDjwOPQ0XDzsOFhE7DTwPOw4WDxYPOxAADQUAAA==
   source:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJOUEjgSOBI4EhMSExITEhMSExI4EjgSOBITEhMSExITEhMSOBITEhMSExITEhMSExITEhMSOBI4EjgSOBI4EjgSOBIADQUAAA==
   top:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJGWEDwNOw88DxQQFg8WDxYPFg86ETkROw8VEBYPFQ8XEBUOFhEVDhYPFhEVDzoROBEVDzsQOw86EDkROhAWDhYPPA4ADQUAAA==
   volmin:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVEDoSOBE5EBUQFREUERQRFBA6EDoROREUEBURFBEUEBUQOhE5ERQROREUEBURFBAVEBUQFRE5ERQQOhE5EDoQOhAADQUAAA==
   volplus:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
-      command: RF_CODE
+      command: b64:JgBGAJKVETkRORA6ERQRFBAVEBUQFRA7EDkROhAUERUQFRAUEBYQOhA6EDoPFhAVEBUQFQ8WEBUPFhAVEDoQOhA6EDoQOg8ADQUAAA==
+  channelup:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJKVEDkROhE4EBUQFg4XDBkPFw86DzsQOg8WERQPFhAVEBUQFRA5ERUPFhA6DxYQFQ8WDzoRFQ87EDoRFBA5EToQOg8ADQUAAA==
+  channeldown:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJKVEDoQOhA6ERQQFg8WDxYQFQ87EDoQOg8WDxcOFw8VDxcOFg8XDhYRFQ47EBUPFg8WDzsPPA87EDkRFBE5EjgQOhAADQUAAA==
+  guide:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgCMAJSTEjcSNxI4EhISExITEhISExI3EjcSNxMSEhMSEhITEhMSNxI3EjcSNxMSEhMSNxITEhISExITEhISNxI3ExISNxIABfuTlBI3EjcSNxITEhMSEhITEhMROBI3EjcSExITERMSExISEjgROBI3EjcSExITETgSEhITEhMRExITEjcSNxITEjcSAA0FAAAAAAAAAAAAAAAA
+  fastforward:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJSVDzsQOhA6EBURFA8WERQSExA6EjgQOhAVEBUQFREUEBUQFREUEBUROREUEhMQOhAVEDoRORE5ERQRORE5EhMSOBEADQUAAA==
+  rewind:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJOUDzsPOxA6EBURFBAVEBYOFg87EDoQOhEUDxYPFg8WDxYQOhAVDzsQFQ8WEhMQOhAVEBURORAVETkRORE5ERQQOhEADQUAAA==
+  play:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJOUETkRORA7EBUQFRAVEBUQFQ87DzsPOw8WEBUQFRAVEBUPOxA6EDoRFBEUEBURORAVEBURFBEUEDoRORE5ERUPOw8ADQUAAA==
+  pause:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgBGAJKVETkQOhA6EhMQFREUERQQFRA7DzsQOhAVEBUPFhAVDxYQFRE5EBUQOhAVERQROREUETkQFRE5ERQQOhA6EBUQOhAADQUAAA==
+  lastch:
+    call: remote.send_command
+    data:
+      entity_id: remote.living_room_remote
+      command: b64:JgCMAJSTEzYTNhM3EhITEhMSEhITEhI3EzYTNhMSExISEhMSExISNxI3ExISEhI3EhMSExISEhMSExI3EjcSExE4EjcSNxIABfuUkhM3EjcTNhMSEhITEhMSEhITNhM3EjcTEhISExISEhMSEzYTNhMSExISNxMRExITEhISExITNhM2ExITNhM2EzcSAA0FAAAAAAAAAAAAAAAA
 name: Samsung
 remote_template: samsungtv
 style: |
