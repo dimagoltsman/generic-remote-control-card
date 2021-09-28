@@ -17,7 +17,10 @@ and then just configure the broadlink codes for each button.
 
 All buttons are configured according to the id of the button in the html section of `remote-html.js`
 
-simple remote example:
+
+<details>
+  <summary>simple remote example: (Click to expand!)</summary>
+
 
 ```
 buttons:
@@ -182,10 +185,13 @@ type: 'custom:generic-remote-control-card'
 
 
 ```
+  
+</details>
+
+<details>
+  <summary>LG remote example: (Click to expand!)</summary>
 
 
-LG remote example:
-(remote design by Avi Abeksis)
 ```
 type: 'custom:generic-remote-control-card'
 name: LG Tv
@@ -268,15 +274,17 @@ buttons:
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
-  
-  
       
 ```
+</details>
 
 
-Mibox Remote example, with ADB server  
+
+<details>
+  <summary>Mibox Remote example, with ADB server: (Click to expand!)</summary>
 (remote design by Avi Abeksis)
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/mibox/remote-back.png?raw=true" height="400">
+
 
 ```
 buttons:
@@ -335,8 +343,11 @@ remote_template: mibox
 type: 'custom:generic-remote-control-card'
 
 ```
+  </details>
 
-Google Chromecast with Google TV Remote example, with ADB server.
+
+<details>
+  <summary>Google Chromecast with Google TV Remote example, with ADB server: (Click to expand!)</summary>
 (remote design by @FaserF & @KaiSMR) <br /> 
 <img src="ccwgtv.png" height="400">
 
@@ -426,8 +437,13 @@ remote_template: ccwgtv
 type: 'custom:generic-remote-control-card'
 
 ```
+  </details>
+  
+  
+ <details>
+  <summary>PartnerTV Remote example, thanx to @VirtualL : (Click to expand!)</summary>
 
-PartnerTV Remote example, thanx to @VirtualL :
+
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/partner/remote-screen-shot.png?raw=true" height="400">
 
@@ -474,8 +490,12 @@ buttons:
   bottom: 
   ok: 
 ```
+  </details>
+  
+  <details>
+  <summary>Samsung TV remote: (Click to expand!)</summary>
 
-Samsung TV remote:
+
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/blob/master/samsungtvremote.png?raw=true" height="400">
 
@@ -654,8 +674,12 @@ style: |
 type: 'custom:generic-remote-control-card'
 
 ```
+  </details>
+  
+  <details>
+  <summary>Yes Remote (Design and codes by Rubinov lior): (Click to expand!)</summary>
 
-Yes Remote (Design and codes by Rubinov lior):
+
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/yesremote.png" height="400">
 
@@ -897,6 +921,8 @@ buttons:
         b64:JgBQAAABJZMSExITETgTEhETEhMSExE4EhMRExI4EjcSOBE4EhMRExITEzYSOBEUEhISExE4EhMSNxITEhMROBI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
 
 ```
+  
+  </details>
 
 
 # Contribution
