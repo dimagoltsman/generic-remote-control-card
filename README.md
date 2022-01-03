@@ -1100,6 +1100,87 @@ type: custom:generic-remote-control-card
   </details>
 
 
+  <details>
+  <summary>Edifier RC600A remote (Design and codes by Pawel Kakol): (Click to expand!)</summary>
+  
+  <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/Edifier-RC600A.png" height="400">
+
+```
+buttons:
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5USExIUERMSORI4EjgSOBITExITNxM4EjgSExEUEhMRFRETFBIRORE5ETkRFRETExMRORE5EhMTEhEVETkQOhI4EQAFTAABKEsRAAxoAAEmSxEADQU=
+  opt:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJ5ESExAWERMSORE5EjkROREVERMQOhE5ETkSFBAUExMRFBEUERQRORI5ERQRExI4EhQSOBE5EBUSExE5EjkTEhE5EQAFTAABKEsRAA0FAAAAAAAAAAA=
+  pc:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABJJQSExIUEhITOBM3EjgTOBISEhQRORE5EjgQFhAUExMQFREUERQRFBITEhMRFRETEhQQORM4ETkSOBI5ETkRORI4EQAFTAABKUoSAAxlAAEoSxEADQU=
+  cox:
+    platform: broadlink
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABIpUSExEUExITOBE5ETkSOBMSEhMSOBI5ETkSExEVERMSFBAUEjkSOBE5EhMTExAUEhUPOhAVERQRFBE5EjgSORE5EAAFTAABKEwQAA0FAAAAAAAAAAA=
+  aux:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJJQTEhIUERMSORE5EjgSORETExMQORM4ETkSFBETExISFBE5ERQRFBEUEhMRFBITERURExM4EDoSOBM4ETkRORI4EgAFSgABKUsRAA0FAAAAAAAAAAA=
+  bluetooth:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5URFBITERQSORA5ETkSOREUERQSOBI5ETkRFBEVEBQRFBE5EhQRORE5EhMRFBQRFBESFBE5ERQSExE5ETkRORI5EQAFSwABKEsTAA0FAAAAAAAAAAA=
+  volumeup:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5USExEVEBQTOBE5EToROBITEhMSOBM4EjgRFBEUEhMRFRETEhQQOhI4EhMSExIUDxUSORA6EhMTEhI5EDkSOBI5EQAFSwABKEwRAA0FAAAAAAAAAAA=
+  volumedown:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJJQRFBEVEBQSORI4EjgSORAUExISOBM4ETkRFBITEhMSFBE5EjgRORE5ERURExITERUSExMSEhMSExI4ETkRORM4EgAFSgABKUsRAA0FAAAAAAAAAAA=
+  previous:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5YSExEUEBUSOBE5EjgTOBEUERQRORI5EDkSFBEUEhMRFBITERQRFRAVERMSFBI4ERQSOBI4EjkQOhI4ETkSExI5EQAFSwABKUoSAAxlAAEoSxEADQU=
+  next:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5USExEUERQSORE5ETkSOBITEhMSOBI5EzcSExEUExISFBE5ETkRFBITERQSExEUERQSExEVEjgSOBI4EjgSOBM4EQAFSwABKUsWAA0FAAAAAAAAAAA=
+  play:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5URFBITEBUSORE5ETkROREVERMRORM4ETkSExEUEhMQFxATEzgPFhEUERQTEhEUEhMSOBIUEjgROhE4EjgRORM4EQAFSwABKUoTAA0FAAAAAAAAAAA=
+name: Ediffier RC600A
+remote_template: edifier_rc600a
+type: custom:generic-remote-control-card
+
+```
+  
+  </details>
 
 # Contribution
 if you want to add your own remote template, you can do it in a new folder near the 'simple' and 'lg' remotes and
