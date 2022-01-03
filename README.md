@@ -1092,7 +1092,7 @@ buttons:
       command: >-
         b64:JgBgAAABIpYSOBM4ETkSExITExMRFBM3EhMSORM3EzgSExITEzgSExI4EhMSFBE5EhMSORITEhMTEhI5ETkSExI5ERQTOBI4EwAFCgABKEsRAAxQAAEnSxIADFEAASdKEwANBQAAAAAAAAAA
 name: InFocus IR1109R1
-remote_template: infocus_ir1109r1_1
+remote_template: infocus_ir1109r1
 type: custom:generic-remote-control-card
 
 ```
