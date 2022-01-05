@@ -921,7 +921,266 @@ buttons:
 ```
   
   </details>
+  <details>
+  <summary>InFocus IR1109R1 remote (Design and codes by Pawel Kakol): (Click to expand!)</summary>
+  
+  <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/InFocus-IR1109R1.png" height="400">
 
+```
+buttons:
+  avmute:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABIpUUNxI4FDcRFBITEhMUERI5EhMSORE5EzcUEhEUEjgSFBE5EhMSExIUEzcSExI5ERQSExI4EjkSOBITFDcSExI4FAAFDAABJksSAA0FAAAAAAAAAAA=
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5USOBI4EzgTEhITEhMSFBI4EhMTOBI4EjkSExITEzcTExE5EzcTOBITEjgSFBITEhMSExITEhQSOBMSEjkRORI4EgAFCwABKEsSAAxQAAEoShIADQU=
+  resync:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABIpUUNxM3EjkSExITEhMSFBE5EhMSORI4EjkRFBITEjgSFBE5EjgSFBITEjgSORITEhMSExIUEjgSORITEhMSOBM4EgAFCwABKUoSAAxQAAEoShIADQU=
+  source:
+    platform: broadlink
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABJJMSORI4EzcSFBEUEhMTEhI5EhMSOBM4EjgSExIUETkSExITEhQSExITEjgTExEUEhMTNxI5EjgSORITEjgSORE5EgAFDAABKEoSAAxQAAEmSxMADQU=
+  up:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgCQAAABIpUSORE5EjgSFBITEhMSExI5EhMSOBI5EjgSExIUETkSExQ3EjgSExIUETkSExIUERQSExITEjkSOBITEjkRORQ2FQAFCwABJ5USOBI5EjgTEhMTEhMSExI4ExMRORI4EjkSExITEjkSExI4EjkSExMSEzgSExITExISFBEUETkSORITEjgTOBI4EwANBQAAAAAAAAAA
+  left:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgDYAAABI5USOBI5ETkSExIUERQSExI4EhQRORI4EjkSExQREjkRFBI4EhQRFBITEjgSFBEUEhMSExI5ETkSORITEjgSOBI5EgAFDAABKJUTOBE5EjgSFBEUEhMSExI5ERQSOBI5ETkSExIUEzcSExI5ExITEhITEjkSExITEhMSExI5EjgSORITEjgSORI4EwAFCwABKpMSORE5EjkRFBMSFBESExQ3EhMSOBI5EjgSExIUEzcSExI5ERQSExQREjkRFBITEhMSExI5EjgSORMSFDYSORE5EgANBQ==
+  enter:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5URORM3EjkSExMSExMRFBI4EhMSORI4EjkRFBITEjgTExITEjgSFBEUEjgSOREUEhMSOBIUETkTOBEUEhMSOBI5EQAFDAABKEsSAAxPAAEnSxIADQU=
+  right:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgDYAAABI5USOBQ3ETkTEhIUERQSExM3EhQRORQ2EzgSExITEjkSExITEjkSExITEjgTExEUEhMSOREUEjgSORITEjgTOBE5EwAFDAABJ5YSOBI5ETkSExITEhQSExI4EhQRORI4EzgSExMSEjkRFBITEjkSExITEjgTExEUEhMSOBIUEjgTOBEUEjgTOBE5EgAFDQABJ5USORI4EzcSFBEUEhMSExM4EhMSOBM4EjgSExIUETkTEhIUETkSExITEjkSExITEhQRORMSEjkSOBITEjkRORI4EgANBQ==
+  down:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgDYAAABIpUTOBE5EjkRFBITEhMSExI5EhMSOBM4EjgSFBEUEjgSExIUERQSOBITFDcTEhMSEhQRORQ2EhQSOBITFDcSOBM3FAAFCwABKJUSOBI5EjgSExIUERQSExM3EhQRORM4ETkSExITEjkSExITEhMSORITEjgSFBEUFBESORE5EhMSOREUEjgSORE5EgAFDAABKJUUNxE5FDYSFBEUEhMSExI5ERQSOBI5EzcSExITFDcSExITEhQRORITEjkSExITEhMSORE5EhMSOREUEjgSORE5FAANBQ==
+  menu:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBgAAABI5USORE5EzgRFBITEhMSExI5ExISOBM4EjgTExEUEjgSExIUETkTEhITEhQRFBITEhMSORITEjgTOBM3EzgSOBI4EgAFDAABKEsSAAxQAAEnTBIADFIAASVLEwANBQAAAAAAAAAA
+  eco:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBgAAABI5UTNxI5EzcTExITERQSExM3EhQTNxI5ETkSExIUETkSExI5ETkTNxIUETkSOBI5EhMSExMSEhQSOBITEhQRFBM3EwAFCgABKEsTAAxPAAEoSxIADE8AASpJEgANBQAAAAAAAAAA
+  keystoneup:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgCQAAABI5USORE5EzgRFBITExITEhI5EhMSOBI5EjgTExEUEjgSExIUERQSExITExMRORMSEhMSORI4EzgRORI4ExMSOBM3EwAFDAABKJUSOBM4EjgSExIUERQSExM3ExMSOBM4ETkTEhIUETkTEhMSEhQSExMSExISORITEhMSORE5EzcTOBI4ExITOBI4EwANBQAAAAAAAAAA
+  keystonedown:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgCQAAABI5USOBM3EjkSExMSEhQRFBE5ExMSOBE5EjkSExITEjgTExE5EhMSFBEUEhMSOBIUEhMSExM3EzgTNxI5EhMSOBI5EgAFDAABKJUSOBI5EjgTExEUEhMSExI5ERQSOBI5ETkSExITEjkSExI5ERQSExMSEhMSORITEhMSFBE5EjgSORM3EhMSORI4EwANBQAAAAAAAAAA
+  volumeup:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgAgAQABIpUTOBE5EjkRFBITEhMSExI5EhMSOBI5EjgSExIUEjgSExMTExISExI4ExMSExITExMSOBE5FDcRFBE5EjkRORM3EgAFDQABKJUSOBI4EjkTEhMSEhQRFBE5ExITOBI4EzgSExITEjgTExEUExISExI5EhMTEhITEhQSOBM3EzgSExI4EzgSOBM4EQAFDQABKJUTNxI5EjgTEhIUEhMTEhI5ERQSOBI5EjgTEhITEzgSExITEhQRFBI4EhMSFBEUEhMTNxM4EjgSExI5EjgTOBI4EwAFCwABKZQTOBI4EzgSExITExITEhM4ExITOBE5EzcTExEUEjgSFBEUEhMSExI5ERQSExMSEhMSORM3EjkSExM3EzgRORM3EgANBQAAAAAAAAAA
+  volumedown:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgDYAAABIpYSOBM3EjkTEhITEhQRFBI4ExISORI4EzgSExITEjgTExEUEhMSOBIUERQSExMSEhMTOBI4ExMSOBI4EjkSOBI4EwAFDAABJ5YSOBM3EzgSExITEhQSExE5EhMTOBI4EjkRFBITEzcSFBEUEhMTNxIUEhMSExITEhMSORM3ExMRORI4EjkTNxM4EQAFDQABJ5YSOBI5ETkSExITEhQRFBI4ExISORM3EjkSExITEjkSExITExISORITEhMSExMSExMSOBI4EhQRORM3EzgSOBI5EQANBQ==
+  one:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5QTOBI4EzgSExITEhMSExI5EhMSORI4EzcSFBEUEjgTEhM4EhMTEhI5EjgTEhMTEhMSExI4EzgSExITEjkSOBM3EwAFCwABKEoSAAxRAAEmSxMADQU=
+  two:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5USORE5EjgSFBEUEhMSExI5EhMSOBI5ETkSExIUETkSExITEjkSExI5ETkSExITEhQRORITEjkRFBITEjkRORI4EgAFDAABJ0sSAAxRAAEoShIADQU=
+  three:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5URORM4EjgTEhITExMRFBI4EhMTOBI4EzgRFBITEjkRFBI4EhMSFBEUEjgTOBE5ExISExI5EjgTOBITEhMTEhM4EgAFCwABKEsSAAxPAAEoSxIADQU=
+  four:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5USOBI5EjgTEhIUERQSExM3EhQRORI4EjkSExITEjkSExI4EhQRORM3FDcSOBI5ExISExI5ExITEhITFBESFBE5FAAFCQABKkkUAAxPAAEmSxMADQU=
+  five:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5QTOBI4EzgSExITEhMSExI5ExISORI4EjgSFBEUEjgTExITEhMSOBIUEjkROREUEhMSOBI5EhMSOBITEhQSOBM3EwAFCgABKEsSAAxUAAEjSxMADQU=
+  six:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5UTNxM4EjgSFBEUEhMSExI5ERQSOBM4EjgSExMTETkSExMSEjkSExITEjkRFBI4EhMSORITEjkRORITEjkRFBI4EwAFCgABKUoTAAxPAAEoSxIADQU=
+  seven:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5QTOBI4EzgRFBMSEhMTExE5EhMTOBE5EjgTExITEjgSFBITEjgSORE5EzcSORI4EhQSOBMSExITExEUEhMTEhM4EgAFCwABKEsSAAxQAAEoShMADQU=
+  eight:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABIpUTNxI5EjgSExIUERQSExI5ERQSOBM4EjgTEhITEjkSExITEjkSOBI5EhMSExMSExITOBITEhMTEhM4EjgSORE5EgAFDQABJksRAAxQAAEoShMADQU=
+  nine:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBoAAABIpYSOBI4EjkSExMSEhMTExE5ExISORI4EzgSExITEzcSFBE5EzgSExITEjgSFBE5EhMSExMTETkSOBIUETkTEhI5EgAFCwABKEsSAAxPAAEoShMADFMAASNLEgAMUAABJ0sSAA0F
+  mouse:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBgAAABI5UTOBM3EjgTExITExITEhM4EhMSOBI5EjgTEhMSEzgTEhMSEzgSOBM4EjgTNxMTERQSOBMSEhQSExITExITOBI4EwAFCgABKUoSAAxRAAEmSxIADFIAASVLFAANBQAAAAAAAAAA
+  zero:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBgAAABI5QTOBE5EjkSExITEhMTEhM4EhMSOBI5ETkSExMTEjgSExMSEhQRORI4EhQRORITEhMSORI4EhMSFBE5EhMSORE5EgAFCwABJ0sSAAxQAAEmSxQADE4AASdLEQANBQAAAAAAAAAA
+  mute:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBgAAABIpYSOBM4ETkSExITExMRFBM3EhMSORM3EzgSExITEzgSExI4EhMSFBE5EhMSORITEhMTEhI5ETkSExI5ERQTOBI4EwAFCgABKEsRAAxQAAEnSxIADFEAASdKEwANBQAAAAAAAAAA
+name: InFocus IR1109R1
+remote_template: infocus_ir1109r1
+type: custom:generic-remote-control-card
+
+```
+  
+  </details>
+
+
+  <details>
+  <summary>Edifier RC600A remote (Design and codes by Pawel Kakol): (Click to expand!)</summary>
+  
+  <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/Edifier-RC600A.png" height="400">
+
+```
+buttons:
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5USExIUERMSORI4EjgSOBITExITNxM4EjgSExEUEhMRFRETFBIRORE5ETkRFRETExMRORE5EhMTEhEVETkQOhI4EQAFTAABKEsRAAxoAAEmSxEADQU=
+  opt:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJ5ESExAWERMSORE5EjkROREVERMQOhE5ETkSFBAUExMRFBEUERQRORI5ERQRExI4EhQSOBE5EBUSExE5EjkTEhE5EQAFTAABKEsRAA0FAAAAAAAAAAA=
+  pc:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABJJQSExIUEhITOBM3EjgTOBISEhQRORE5EjgQFhAUExMQFREUERQRFBITEhMRFRETEhQQORM4ETkSOBI5ETkRORI4EQAFTAABKUoSAAxlAAEoSxEADQU=
+  cox:
+    platform: broadlink
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABIpUSExEUExITOBE5ETkSOBMSEhMSOBI5ETkSExEVERMSFBAUEjkSOBE5EhMTExAUEhUPOhAVERQRFBE5EjgSORE5EAAFTAABKEwQAA0FAAAAAAAAAAA=
+  aux:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJJQTEhIUERMSORE5EjgSORETExMQORM4ETkSFBETExISFBE5ERQRFBEUEhMRFBITERURExM4EDoSOBM4ETkRORI4EgAFSgABKUsRAA0FAAAAAAAAAAA=
+  bluetooth:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5URFBITERQSORA5ETkSOREUERQSOBI5ETkRFBEVEBQRFBE5EhQRORE5EhMRFBQRFBESFBE5ERQSExE5ETkRORI5EQAFSwABKEsTAA0FAAAAAAAAAAA=
+  volumeup:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5USExEVEBQTOBE5EToROBITEhMSOBM4EjgRFBEUEhMRFRETEhQQOhI4EhMSExIUDxUSORA6EhMTEhI5EDkSOBI5EQAFSwABKEwRAA0FAAAAAAAAAAA=
+  volumedown:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABJJQRFBEVEBQSORI4EjgSORAUExISOBM4ETkRFBITEhMSFBE5EjgRORE5ERURExITERUSExMSEhMSExI4ETkRORM4EgAFSgABKUsRAA0FAAAAAAAAAAA=
+  previous:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBYAAABI5YSExEUEBUSOBE5EjgTOBEUERQRORI5EDkSFBEUEhMRFBITERQRFRAVERMSFBI4ERQSOBI4EjkQOhI4ETkSExI5EQAFSwABKUoSAAxlAAEoSxEADQU=
+  next:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5USExEUERQSORE5ETkSOBITEhMSOBI5EzcSExEUExISFBE5ETkRFBITERQSExEUERQSExEVEjgSOBI4EjgSOBM4EQAFSwABKUsWAA0FAAAAAAAAAAA=
+  play:
+    call: remote.send_command
+    data:
+      entity_id: remote.pilot_uniwersalny_remote
+      command: >-
+        b64:JgBQAAABI5URFBITEBUSORE5ETkROREVERMRORM4ETkSExEUEhMQFxATEzgPFhEUERQTEhEUEhMSOBIUEjgROhE4EjgRORM4EQAFSwABKUoTAA0FAAAAAAAAAAA=
+name: Ediffier RC600A
+remote_template: edifier_rc600a
+type: custom:generic-remote-control-card
+
+```
+  
+  </details>
 
 # Contribution
 if you want to add your own remote template, you can do it in a new folder near the 'simple' and 'lg' remotes and
