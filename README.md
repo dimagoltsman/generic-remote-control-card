@@ -678,7 +678,9 @@ type: 'custom:generic-remote-control-card'
   <summary>JBL SoundBar 350 Remote (Design and codes by Roger 4R): (Click to expand!)</summary>
 
    <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/yesremote.png" height="400">
+
 ```
+
 type: custom:generic-remote-control-card
 buttons:
   power:
