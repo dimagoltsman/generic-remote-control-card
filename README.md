@@ -673,7 +673,116 @@ type: 'custom:generic-remote-control-card'
 
 ```
   </details>
-  
+
+  <details>
+  <summary>JBL SoundBar 350 Remote (Design and codes by Roger 4R): (Click to expand!)</summary>
+
+   <img src="https://github.com/Roger4R/generic-remote-control-card/blob/master/jblsoundbar_remote.png" height="400">
+
+```
+
+type: custom:generic-remote-control-card
+buttons:
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJpISFBITEjgSExMTEhMSFBM3ExISFBI4EhMTOBI4EjgSExI5EjgSOBI4EjgSOBM4EzcTEhMTEhMSExQSEhMSFBITEgAFbAABKEoTAA0F
+  bluetooth:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBMABMSExMSExIUEhMTEhMTEjgSExIUEhMSExI5EjgTNxITEhQTNxITEjgSORI4ExISOBI4ExMTNxMSEhQSExI4ExMTAAW0AAEmSxIADQU=
+  source:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBUAAABJ5ITEhITExMSExIUEhMTEhM3EhQSExIUEhMTNxI4EjgTExITEzcSOBIUEhMSOBITEzgTNxMSEhMTNxM4EhMSOBIUEgAD7ggAAb4AASdKEwANBQ==
+  aux:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJpMSExMSExMSExMTExITExM3ExITExITExMSOBM3EzgSExIUEhMTNxMTEjgSOBMTEjgSORM3EhMTOBMSEhQSOBIUEwAFtgABJ0sSAA0F
+  optical:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJpMSFBITFBISExMTEhQSExM3EhQSExQSEhMTOBI4EjYVExI5EhMSFBI4EjkSOBI5EjgSFBI4EjkSExIUEhMSFBITEgAFuQABKkoTAA0F
+  feedback:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJ5MTExITEhQSExIUExITEhM4ExITExITEhQSOBI4EzgTEhIUEzcTExQ2ExMSOBI4EjkSOBITEzgSExI5EhMSFBITEgAFuQABKUoSAA0F
+  minus:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJZMSExMTEhMSExMTEhMTExM3ExISFBITEhMSOBM4EzcTEhMTExITExI4EhMTEhI5EjgSOBI4EjgTExI4EjgUERMTEgAFtQABJ0oTAA0F
+  mute:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJpMTEhMTEhMSFBMSEhMTExI4EhMTExQREhQTNxI4EzcSFBM3EhQTEhMSEhQSExI4EzgSExM3EzgTNxI4EjgSFBITEgAFtwABJ0sSAA0F
+  plus:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJ5ITEhMTEhMTExITExMSExM4ExISFBITEhQSOBI4EzgTEhI5EzcSOBMTExITExI4EjkSExIUEhMSOBQ3EjgTExITEgAFuQABJ0sUAA0F
+  bassminus:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJZMTExMSEhQTEhITEhQSExI4ExMSExITExMSOBM3EjgTEhI5ExITNxI4EhQSOBI4EjgTEhI4EhQSExM3EhQTEhITEwAFtAABJ0kUAA0F
+  bassplus:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBUAAABKJIVERITEhQSExITEhQSExI4ExMSExMTEhMTNxI4EzgSExITExMUNhM3EhQTNxM3EjgTNxM4ExITEhM4ExISFBITEgAFtQABJ0sSAAL6CQANBQ==
+  surround:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABKJESFBITEhQSExITExMSExI4ExMSExMSEhQSOBI1FjcTEhMTEzcTNxI4ExMSOBMSEjgTNxMTExISFBM3EhMSOBIUEgAFtQABJksSAA0F
+  stereo:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBQAAABJZMTEhM3ExMSExIUExISExI4ExMTNxMSEhQSOBI4EjgTEhIUExISFBI4ExITNxIUEzcSOBM3EjgTExI4EhMTNxIUEgAFawABJ0oTAA0F
+  harman:
+    call: remote.send_command
+    data:
+      entity_id: remote.broadlink_remote
+      command: >-
+        b64:JgBUAAUACQ8AASeSExMSExIUExITExITExITNxIUEhMTExITEzcTNxI4ExMTNxI4EjgTOBITEjgTExM3EhMTExITExITNxMTEjgSFBIABbUAAShKEgANBQ==
+name: Jbl
+remote_template: jblsoundbar
+style: |
+  ha-card {
+    font-size: 10px;
+  }
+  h1{
+    text-align:left;
+    margin-left: 50px;
+  }
+
+```
+
+  </details>
+
+
   <details>
   <summary>Yes Remote (Design and codes by Rubinov lior): (Click to expand!)</summary>
 
