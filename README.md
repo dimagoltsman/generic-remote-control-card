@@ -1288,7 +1288,171 @@ remote_template: edifier_rc600a
 type: custom:generic-remote-control-card
 
 ```
+  </details>
+
+
+  <details>
+  <summary>Apple TV 4k Remote (Design and codes by richsimpson): (Click to expand!)</summary>
   
+  <img src="https://github.com/richsimpson/generic-remote-control-card/blob/master/apple4kremote.png" height="400">
+
+```
+type: custom:generic-remote-control-card
+name: Apple TV Lounge
+remote_template: apple4kremote
+buttons:
+  up:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: up
+  left:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: left
+  select:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: select
+  right:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: right
+  down:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: down
+  menu:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: menu
+  tv:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: home
+  siri:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: select
+  volup:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: volume_up
+  play:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: select
+  voldown:
+    call: remote.send_command
+    data:
+      entity_id: remote.apple_tv_lounge
+      command: volume_down
+
+```  
+  </details>
+
+  <details>
+  <summary>Firestick 4k Remote (Design and codes by richsimpson): (Click to expand!)</summary>
+  
+  <img src="https://github.com/richsimpson/generic-remote-control-card/blob/master/firestick4kremote.png" height="400">
+
+```
+type: custom:generic-remote-control-card
+name: Bedroom Firestick
+remote_template: firestick4kremote
+buttons:
+  pwr:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: input keyevent 26
+  mic:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: null
+  volup:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: null
+  voldown:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: null
+  mute:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: null
+  up:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: UP
+  left:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: LEFT
+  select:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: input keyevent 23
+  right:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: RIGHT
+  down:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: DOWN
+  back:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: BACK
+  home:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: HOME
+  menu:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: MENU
+  rwd:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: input keyevent 89
+  play:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: input keyevent 85
+  fwd:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.fire_tv_bedroom
+      command: input keyevent 90
+
+
+```  
   </details>
 
 # Contribution
