@@ -21,8 +21,8 @@ function getRemoteStyle_firestick4kremote(config) {
 #remote-control-firestick4kremote {
 	position: relative;
 	background: url(${base_url}/firestick4kremote.png) no-repeat;
-	width: 162px;
-	height: 524px
+	width: 332px;
+	height: 768px
 }
 
 #remote-control-firestick4kremote h2,
@@ -58,130 +58,130 @@ function getRemoteStyle_firestick4kremote(config) {
 }
 
 #remote-control-firestick4kremote li#pwr a {
-    left: 23px;
-    top: 25px;
-    width: 35px;
-    height: 35px;	
+    left: 86px;
+    top: 27px;
+    width: 36px;
+    height: 36px;	
 	background: url(${base_url}/pwr.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#mic a {
-    left: 64px;
-    top: 58px;
-    width: 33px;
-    height: 33px;	
+    left: 140px;
+    top: 68px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/mic.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#volup a {
-    left: 65px;
-    top: 296px;
-    width: 32px;
-    height: 32px;	
+    left: 140px;
+    top: 428px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/volup.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#voldown a {
-    left: 65px;
-    top: 331px;
-    width: 32px;
-    height: 32px;	
+    left: 140px;
+    top: 485px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/voldown.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#mute a {
-    left: 65px;
-    top: 373px;
-    width: 32px;
-    height: 32px;	
+    left: 140px;
+    top: 548px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/mute.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#up a {
-    left: 53px;
-    top: 101px;
-    width: 54px;
-    height: 22px;	
+    left: 120px;
+    top: 129px;
+    width: 89px;
+    height: 42px;	
 	background: url(${base_url}/up.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#left a {
-    left: 27px;
-    top: 123px;
-    width: 22px;
-    height: 54px;	
+    left: 78px;
+    top: 169px;
+    width: 42px;
+    height: 89px;	
 	background: url(${base_url}/left.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#select a {
-    left: 59px;
-    top: 132px;
-    width: 42px;
-    height: 42px;	
+    left: 134px;
+    top: 183px;
+    width: 63px;
+    height: 63px;	
 	background: url(${base_url}/select.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#right a {
-    left: 112px;
-    top: 123px;
-    width: 22px;
-    height: 54px;	
+    left: 210px;
+    top: 169px;
+    width: 42px;
+    height: 89px;	
 	background: url(${base_url}/right.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#down a {
-    left: 53px;
-    top: 185px;
-    width: 54px;
-    height: 22px;	
+    left: 120px;
+    top: 256px;
+    width: 89px;
+    height: 42px;	
 	background: url(${base_url}/down.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#back a {
-    left: 25px;
-    top: 217px;
-    width: 32px;
-    height: 32px;	
+    left: 80px;
+    top: 308px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/back.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#home a {
-    left: 64px;
-    top: 217px;
-    width: 32px;
-    height: 32px;	
+    left: 140px;
+    top: 308px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/home.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#menu a {
-    left: 105px;
-    top: 217px;
-    width: 32px;
-    height: 32px;	
+    left: 200px;
+    top: 308px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/menu.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#rwd a {
-    left: 25px;
-    top: 256px;
-    width: 32px;
-    height: 32px;	
+    left: 80px;
+    top: 367px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/rwd.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#play a {
-    left: 64px;
-    top: 256px;
-    width: 32px;
-    height: 32px;	
+    left: 140px;
+    top: 367px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/play.png) no-repeat
 }
 
 #remote-control-firestick4kremote li#fwd a {
-    left: 105px;
-    top: 256px;
-    width: 32px;
-    height: 32px;	
+    left: 200px;
+    top: 367px;
+    width: 49px;
+    height: 49px;	
 	background: url(${base_url}/fwd.png) no-repeat
 }
 
