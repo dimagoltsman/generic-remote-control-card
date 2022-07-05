@@ -23,6 +23,7 @@ function getRemoteStyle_samsungtv(config) {
 	background: url(${base_url}/samsungtv_remote.png) no-repeat;
 	width: 224px;
 	height: 728px
+	margin: auto;
 }
 
 #remote-control-samsungtv h2,
