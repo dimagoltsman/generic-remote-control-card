@@ -27,8 +27,7 @@ function getRemoteStyle_samsungtv(config) {
 
 #remote-control-samsungtv h2,
 #remote-control-samsungtv span {
-	position: absolute;
-	left: 5000px
+	display: none;
 }
 
 #remote-control-samsungtv ul {
