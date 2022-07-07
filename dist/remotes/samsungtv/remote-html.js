@@ -23,12 +23,7 @@ function getRemoteStyle_samsungtv(config) {
 	background: url(${base_url}/samsungtv_remote.png) no-repeat;
 	width: 224px;
 	height: 728px
-}
-
-#remote-control-samsungtv h2,
-#remote-control-samsungtv span {
-	position: absolute;
-	left: 5000px
+	margin: auto;
 }
 
 #remote-control-samsungtv ul {
@@ -480,58 +475,47 @@ function getRemoteStyle_samsungtv(config) {
 function getRemoteHtml_samsungtv(config){
  const template = config.remote_template;
  return `
-
  <div class="container">
             <div style="text-align:center">
 			<h1>${config.name}</h1>
 			</div>
 			<div id="remote-control-samsungtv">
-				<h2>
-					Main navigation
-				</h2>
 				<ul>
-					<li id="power" class="myButton-${template}"><a href="#" title="Power"><span>Power</span></a></li>
-					<li id="volmin" class="myButton-${template}"><a href="#" title="Vol Min"><span>Vol Min</span></a></li>
-					<li id="volplus" class="myButton-${template}"><a href="#" title="Vol Plus"><span>Vol Plus</span></a></li>
-					<li id="mute" class="myButton-${template}"><a href="#" title="Vol Mute"><span>Vol Mute</span></a></li>
-					<li id="source" class="myButton-${template}"><a href="#" title="Source"><span>Source</span></a></li>
-				</ul>
-
-				<ul>
-					<li id="lastch"  class="myButton-${template}""><a href="#" title="last ch"><span>lastch</span></a></li>
-				</ul>
-
-				<ul>
-					<li class="myButton-${template}" id="one"><a href="#" title="one"><span>one</span></a></li>
-					<li class="myButton-${template}" id="two"><a href="#" title="two"><span>two</span></a></li>
-					<li class="myButton-${template}" id="three"><a href="#" title="three"><span>three</span></a></li>
-					<li class="myButton-${template}" id="four"><a href="#" title="four"><span>four</span></a></li>
-					<li class="myButton-${template}" id="five"><a href="#" title="five"><span>five</span></a></li>
-					<li class="myButton-${template}" id="six"><a href="#" title="six"><span>six</span></a></li>
-					<li class="myButton-${template}" id="seven"><a href="#" title="seven"><span>seven</span></a></li>
-					<li class="myButton-${template}" id="eight"><a href="#" title="eight"><span>eight</span></a></li>
-					<li class="myButton-${template}" id="nine"><a href="#" title="nine"><span>nine</span></a></li>
-					<li class="myButton-${template}" id="zero"><a href="#" title="zero"><span>zero</span></a></li>
-					<li class="myButton-${template}" id="fastforward"><a href="#" title="fastforward"><span>fastforward</span></a></li>
-					<li class="myButton-${template}" id="rewind"><a href="#" title="rewind"><span>rewind</span></a></li>
-					<li class="myButton-${template}" id="play"><a href="#" title="play"><span>play</span></a></li>
-					<li class="myButton-${template}" id="pause"><a href="#" title="pause"><span>pause</span></a></li>
-					<li class="myButton-${template}" id="stop"><a href="#" title="stop"><span>stop</span></a></li>						
-					<li class="myButton-${template}" id="channelup"><a href="#" title="channel up"><span>channelup</span></a></li>
-					<li class="myButton-${template}" id="channeldown"><a href="#" title="channel down"><span>channeldown</span></a></li>
-					<li class="myButton-${template}" id="menu"><a href="#" title="Menu"><span>Menu</span></a></li>
-					<li class="myButton-${template}" id="back"><a href="#" title="Go back"><span>back</span></a></li>
-					<li class="myButton-${template}" id="exit"><a href="#" title="Exit"><span>exit</span></a></li>
-					<li class="myButton-${template}" id="guide"><a href="#" title="Guide"><span>guide</span></a></li>
-					<li class="myButton-${template}" id="info"><a href="#" title="Info"><span>info</span></a></li>
-					<li class="myButton-${template}" id="left"><a href="#" title="Left"><span>Left</span></a></li>
-					<li class="myButton-${template}" id="right"><a href="#" title="right"><span>right</span></a></li>
-					<li class="myButton-${template}" id="top"><a href="#" title="Top"><span>Top</span></a></li>
-					<li class="myButton-${template}" id="bottom"><a href="#" title="Bottom"><span>Bottom</span></a></li>
-					<li class="myButton-${template}" id="ok"><a href="#" title="OK"><span>OK</span></a></li>
+					<li class="myButton-${template}" id="power" ><a href="#" title="Power"></a></li>
+					<li class="myButton-${template}" id="volmin"><a href="#" title="Vol Min"></a></li>
+					<li class="myButton-${template}" id="volplus"><a href="#" title="Vol Plus"></a></li>
+					<li class="myButton-${template}" id="mute"><a href="#" title="Vol Mute"></a></li>
+					<li class="myButton-${template}" id="source"><a href="#" title="Source"></a></li>
+					<li class="myButton-${template}" id="lastch"><a href="#" title="last ch"></a></li>
+					<li class="myButton-${template}" id="one"><a href="#" title="one"></a></li>
+					<li class="myButton-${template}" id="two"><a href="#" title="two"></a></li>
+					<li class="myButton-${template}" id="three"><a href="#" title="three"></a></li>
+					<li class="myButton-${template}" id="four"><a href="#" title="four"></a></li>
+					<li class="myButton-${template}" id="five"><a href="#" title="five"></a></li>
+					<li class="myButton-${template}" id="six"><a href="#" title="six"></a></li>
+					<li class="myButton-${template}" id="seven"><a href="#" title="seven"></a></li>
+					<li class="myButton-${template}" id="eight"><a href="#" title="eight"></a></li>
+					<li class="myButton-${template}" id="nine"><a href="#" title="nine"></a></li>
+					<li class="myButton-${template}" id="zero"><a href="#" title="zero"></a></li>
+					<li class="myButton-${template}" id="fastforward"><a href="#" title="fastforward"></a></li>
+					<li class="myButton-${template}" id="rewind"><a href="#" title="rewind"></a></li>
+					<li class="myButton-${template}" id="play"><a href="#" title="play"></a></li>
+					<li class="myButton-${template}" id="pause"><a href="#" title="pause"></a></li>
+					<li class="myButton-${template}" id="stop"><a href="#" title="stop"></a></li>						
+					<li class="myButton-${template}" id="channelup"><a href="#" title="channel up"></a></li>
+					<li class="myButton-${template}" id="channeldown"><a href="#" title="channel down"></a></li>
+					<li class="myButton-${template}" id="menu"><a href="#" title="Menu"></a></li>
+					<li class="myButton-${template}" id="back"><a href="#" title="Go back"></a></li>
+					<li class="myButton-${template}" id="exit"><a href="#" title="Exit"></a></li>
+					<li class="myButton-${template}" id="guide"><a href="#" title="Guide"></a></li>
+					<li class="myButton-${template}" id="info"><a href="#" title="Info"></a></li>
+					<li class="myButton-${template}" id="left"><a href="#" title="Left"></a></li>
+					<li class="myButton-${template}" id="right"><a href="#" title="right"></a></li>
+					<li class="myButton-${template}" id="top"><a href="#" title="Top"></a></li>
+					<li class="myButton-${template}" id="bottom"><a href="#" title="Bottom"></a></li>
+					<li class="myButton-${template}" id="ok"><a href="#" title="OK"></a></li>
 				</ul>
 			</div>	
 		</div>
-
 `;
 }
