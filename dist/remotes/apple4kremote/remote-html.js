@@ -22,13 +22,8 @@ function getRemoteStyle_apple4kremote(config) {
 	position: relative;
 	background: url(${base_url}/apple4kremote.png) no-repeat;
 	width: 349px;
-	height: 930px
-}
-
-#remote-control-apple4kremote h2,
-#remote-control-apple4kremote span {
-	position: absolute;
-	left: 5000px
+	height: 930px;
+	margin: auto;
 }
 
 #remote-control-apple4kremote ul {
@@ -196,21 +191,18 @@ function getRemoteHtml_apple4kremote(config){
 			<h1>${config.name}</h1>
 			</div>
 			<div id="remote-control-apple4kremote">
-				<h2>
-					Main navigation
-				</h2>
 				<ul>
-					<li id="up" class="myButton-${template}"><a href="#" title="up"><span>up</span></a></li>
-					<li id="left" class="myButton-${template}"><a href="#" title="left"><span>left</span></a></li>
-					<li id="select" class="myButton-${template}"><a href="#" title="select"><span>select</span></a></li>
-					<li id="right" class="myButton-${template}"><a href="#" title="right"><span>right</span></a></li>
-					<li id="down" class="myButton-${template}"><a href="#" title="down"><span>down</span></a></li>
-					<li id="menu" class="myButton-${template}"><a href="#" title="menu"><span>menu</span></a></li>
-					<li id="tv" class="myButton-${template}"><a href="#" title="tv"><span>tv</span></a></li>
-					<li id="siri" class="myButton-${template}"><a href="#" title="siri"><span>siri</span></a></li>
-					<li id="volup" class="myButton-${template}"><a href="#" title="volup"><span>volup</span></a></li>
-					<li id="play" class="myButton-${template}"><a href="#" title="play"><span>play</span></a></li>
-					<li id="voldown" class="myButton-${template}"><a href="#" title="voldown"><span>voldown</span></a></li>			
+					<li id="up" class="myButton-${template}"><a href="#" title="up"></a></li>
+					<li id="left" class="myButton-${template}"><a href="#" title="left"></a></li>
+					<li id="select" class="myButton-${template}"><a href="#" title="select"></a></li>
+					<li id="right" class="myButton-${template}"><a href="#" title="right"></a></li>
+					<li id="down" class="myButton-${template}"><a href="#" title="down"></a></li>
+					<li id="menu" class="myButton-${template}"><a href="#" title="menu"</a></li>
+					<li id="tv" class="myButton-${template}"><a href="#" title="tv"></a></li>
+					<li id="siri" class="myButton-${template}"><a href="#" title="siri"></a></li>
+					<li id="volup" class="myButton-${template}"><a href="#" title="volup"></a></li>
+					<li id="play" class="myButton-${template}"><a href="#" title="play"></a></li>
+					<li id="voldown" class="myButton-${template}"><a href="#" title="voldown"></a></li>			
 				</ul>
 			</div>	
 		</div>
