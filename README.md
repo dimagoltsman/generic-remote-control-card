@@ -1450,6 +1450,8 @@ buttons:
   <details>
   <summary>Android custom keyboard (Design and codes by pawkakol1): (Click to expand!)</summary>
   
+  It isn't template of any real remote. It is custom keyboard works with any media box with Android OS with ADB server (eg. Mibox). It works with standard search field of applications like YouTube, Netflix, HBO Max, etc.
+
   <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/android_custom_keyboard.png" height="400">
 
 ```
