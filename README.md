@@ -1,4 +1,4 @@
-# Remote Control card #
+# Remote Control card
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
 
@@ -15,10 +15,8 @@ and then just configure the broadlink codes for each button.
 
 All buttons are configured according to the id of the button in the html section of `remote-html.js`
 
-
 <details>
   <summary>simple remote example: (Click to expand!)</summary>
-
 
 ```
 buttons:
@@ -183,41 +181,40 @@ type: 'custom:generic-remote-control-card'
 
 
 ```
-  
+
 </details>
 
 <details>
   <summary>LG remote example: (Click to expand!)</summary>
-
 
 ```
 type: 'custom:generic-remote-control-card'
 name: LG Tv
 remote_template: simple
 buttons:
-  power: 
+  power:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBYAAABKpIVEBURFDUWEBQRFBETEhURFDUVNRUQFTUVNRQ2FDUTNxQTExEUEhE3ExQTERMSFRITNRU1FDYUEhI3FDUVNRM3FQAFMwABKEoWAAxMAAEqSBUADQU="
-  
-  
+
+
   source:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBYAAABJpMSExEUETgRFBEUERMSExITEjcSOBETEjgROBI4ETgSOBETEjgROBITEhMSEhM3ETgTNxITERMSOBE4EjgRExITEQAFGwABJkoSAAxGAAElSxIADQU="
-  
-   
-  button1:  
-  button2:  
-  button3:  
-  button4:  
-  button5:  
-  button6:  
-  button7:  
-  button8:  
-  button9:  
+
+
+  button1:
+  button2:
+  button3:
+  button4:
+  button5:
+  button6:
+  button7:
+  button8:
+  button9:
   buttonClear:
   button0:
   buttonEnter:
@@ -227,62 +224,60 @@ buttons:
   channeldown:
   channelup:
   netflix:
-  left: 
+  left:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBQAAABKpIVEBMRFRAVEBUQFBEUERQREjcUNhM2EzYUNhM2FBAVNRQ1FRAVEBQ2EzYTERYPFRAVERM2EjcUEBUREzYUNRQ2FAAFTQABKUgUAA0FAAAAAAAAAAA="
-  right: 
+  right:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBQAAABKZIUERQRExIUERMRFBEVEBQREzYVNBU1FDUUNRU1FBETNhUQFBEUERQ1FTQVERMSExEUNRU1FDUUERUQFDUUNhM2FAAFTgABKEgVAA0FAAAAAAAAAAA="
- 
-  top: 
+
+  top:
   call: remote.send_command
   data:
     entity_id: remote.living_room_remote
     command: "b64:JgBQAAABKJIVERQRExIVDxQRFBEUERQREzYTNhU1FTQWMxU1FBETNhQRFDUUNRUQFTUUERMSFBAUNRURExIUNRQQFTUUNRM2FQAFTgABKEgVAA0FAAAAAAAAAAA="
-    
-  bottom: 
+
+  bottom:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBQAAABKZIUERMSEhIUERUQFBEUERMSEzYUNhM2FTQUNhM2FBAUNhQ1FTQVNRQRFDUUERUQExITEhQRFBAVNBURFDUVNBU1FAAFTQABKUgVAA0FAAAAAAAAAAA="
-  
-  ok: 
+
+  ok:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBUAAkACXEAASiTFRAUERQRFBETEhQRExEUERU1FDUUNRU1FDUUNRYPEzcTNhQQFjQTEhU0Fg8UERQRFBEVNBQRFDYSEhQ1FTQVNRQABU4AASlIFAANBQAAAAA="
   back:
-  volplus: 
+  volplus:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBQAAABJZMTEhITETgSExEUERMSExITETgSOBITETgSNxM3ETgSOBEUETgRFBETEhMSExEUERMTNxISEzcROBM3ETgSOBI3EwAFGQABJkoSAA0FAAAAAAAAAAA="
-  volmin: 
+  volmin:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgBYAAABJpMSExEUETgSExEUERMSExEUETgSOBMREjgROBI4ETgSNxI4EjgRExITERQRExITEhMRFBETEjgROBI4ETgSOBE4EQAFGwABJkoSAAxFAAEmShIADQU="
-  
-  mute: 
+
+  mute:
     call: remote.send_command
     data:
       entity_id: remote.living_room_remote
       command: "b64:JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
-      
+
 ```
+
 </details>
-
-
 
 <details>
   <summary>Mibox Remote example, with ADB server: (Click to expand!)</summary>
 (remote design by Avi Abeksis)
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/mibox/remote-back.png?raw=true" height="400">
-
 
 ```
 buttons:
@@ -341,8 +336,8 @@ remote_template: mibox
 type: 'custom:generic-remote-control-card'
 
 ```
-  </details>
 
+  </details>
 
 <details>
   <summary>Google Chromecast with Google TV Remote example, with ADB server: (Click to expand!)</summary>
@@ -435,13 +430,12 @@ remote_template: ccwgtv
 type: 'custom:generic-remote-control-card'
 
 ```
+
   </details>
   
   
  <details>
   <summary>PartnerTV Remote example, thanx to @VirtualL : (Click to expand!)</summary>
-
-
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/partner/remote-screen-shot.png?raw=true" height="400">
 
@@ -450,50 +444,49 @@ type: 'custom:generic-remote-control-card'
 name: PartnerTV
 remote_template: partner
 buttons:
-  power: 
-  volplus: 
+  power:
+  volplus:
   volmin:
-  partner: 
-  mute: 
-  record: 
-  source: 
-  one: 
-  two: 
-  three: 
-  four: 
-  five: 
-  six: 
-  seven: 
-  eight: 
-  nine: 
-  zero: 
+  partner:
+  mute:
+  record:
+  source:
+  one:
+  two:
+  three:
+  four:
+  five:
+  six:
+  seven:
+  eight:
+  nine:
+  zero:
   section12:
   lastch:
   fastforward:
-  rewind: 
-  play: 
-  stop: 
-  vod: 
-  myrec: 
-  netflix: 
-  youtube: 
+  rewind:
+  play:
+  stop:
+  vod:
+  myrec:
+  netflix:
+  youtube:
   channelup:
   channeldown:
-  home: 
-  back: 
-  circle: 
-  left: 
-  right: 
-  top: 
-  bottom: 
-  ok: 
+  home:
+  back:
+  circle:
+  left:
+  right:
+  top:
+  bottom:
+  ok:
 ```
+
   </details>
   
   <details>
   <summary>Samsung TV remote: (Click to expand!)</summary>
-
-
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/blob/master/samsungtvremote.png?raw=true" height="400">
 
@@ -672,6 +665,7 @@ style: |
 type: 'custom:generic-remote-control-card'
 
 ```
+
   </details>
 
   <details>
@@ -782,11 +776,8 @@ style: |
 
   </details>
 
-
   <details>
   <summary>Yes Remote (Design and codes by Rubinov lior): (Click to expand!)</summary>
-
-
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/yesremote.png" height="400">
 
@@ -1028,10 +1019,10 @@ buttons:
         b64:JgBQAAABJZMSExITETgTEhETEhMSExE4EhMRExI4EjcSOBE4EhMRExITEzYSOBEUEhISExE4EhMSNxITEhMROBI4ETgSExE4EgAFYgABJkoSAA0FAAAAAAAAAAA=
 
 ```
-  
+
   </details>
   <details>
-  <summary>InFocus IR1109R1 remote (Design and codes by Pawel Kakol): (Click to expand!)</summary>
+  <summary>InFocus IR1109R1 remote (Design and codes by pawkakol1): (Click to expand!)</summary>
   
   <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/InFocus-IR1109R1.png" height="400">
 
@@ -1205,12 +1196,11 @@ remote_template: infocus_ir1109r1
 type: custom:generic-remote-control-card
 
 ```
-  
+
   </details>
 
-
   <details>
-  <summary>Edifier RC600A remote (Design and codes by Pawel Kakol): (Click to expand!)</summary>
+  <summary>Edifier RC600A remote (Design and codes by pawkakol1): (Click to expand!)</summary>
   
   <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/Edifier-RC600A.png" height="400">
 
@@ -1288,8 +1278,8 @@ remote_template: edifier_rc600a
 type: custom:generic-remote-control-card
 
 ```
-  </details>
 
+  </details>
 
   <details>
   <summary>Apple TV 4k Remote (Design and codes by richsimpson): (Click to expand!)</summary>
@@ -1357,7 +1347,8 @@ buttons:
       entity_id: remote.apple_tv_lounge
       command: volume_down
 
-```  
+```
+
   </details>
 
   <details>
@@ -1452,14 +1443,241 @@ buttons:
       command: input keyevent 90
 
 
-```  
+```
+
+  </details>
+
+  <details>
+  <summary>Android custom keyboard (Design and codes by pawkakol1): (Click to expand!)</summary>
+  
+  It isn't template of any real remote. It is custom keyboard works with any media box with Android OS with ADB server (eg. Mibox). It works with standard search field of applications like YouTube, Netflix, HBO Max, etc.
+
+  <img src="https://github.com/pawkakol1/generic-remote-control-card/blob/master/android_custom_keyboard.png" height="400">
+
+```
+buttons:
+  btn-0:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 7
+  btn-1:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 8
+  btn-2:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 9
+  btn-3:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 10
+  btn-4:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 11
+  btn-5:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 12
+  btn-6:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 13
+  btn-7:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 14
+  btn-8:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 15
+  btn-9:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 16
+  btn-A:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 29
+  btn-B:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 30
+  btn-C:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 31
+  btn-D:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 32
+  btn-E:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 33
+  btn-F:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 34
+  btn-G:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 35
+  btn-H:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 36
+  btn-I:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 37
+  btn-J:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 38
+  btn-K:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 39
+  btn-L:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 40
+  btn-M:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 41
+  btn-N:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 42
+  btn-O:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 43
+  btn-P:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 44
+  btn-Q:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 45
+  btn-R:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 46
+  btn-S:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 47
+  btn-T:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 48
+  btn-U:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 49
+  btn-V:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 50
+  btn-W:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 51
+  btn-X:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 52
+  btn-Y:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 53
+  btn-Z:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 54
+  btn-COMMA:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 55
+  btn-DOTT:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 56
+  btn-SHIFT:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent  59
+  btn-SPACE:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 62
+  btn-BACKSPACE:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 67
+  btn-ENTER:
+    call: androidtv.adb_command
+    data:
+      entity_id: media_player.projekttv
+      command: input keyevent 66
+name: Android Custom Keyboard
+remote_template: android_custom_keyboard
+type: custom:generic-remote-control-card
+
+```
+
   </details>
 
 # Contribution
+
 if you want to add your own remote template, you can do it in a new folder near the 'simple' and 'lg' remotes and
-set remote_template to the name of your new folder. 
+set remote_template to the name of your new folder.
 just make sure you are changing the html and css methods suffixes
 
-# you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml #
-
-
+# you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml
