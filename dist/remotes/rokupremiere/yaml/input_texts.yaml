@@ -1,0 +1,66 @@
+# roku ir codes
+rokupremiere_leftarrow_text:
+  initial: !secret rokupremiere_leftarrow
+  min: 0
+  max: 255
+rokupremiere_home_text:
+  initial: !secret rokupremiere_home
+  min: 0
+  max: 255
+rokupremiere_up_text:
+  initial: !secret rokupremiere_up
+  min: 0
+  max: 255
+rokupremiere_down_text:
+  initial: !secret rokupremiere_down
+  min: 0
+  max: 255
+rokupremiere_left_text:
+  initial: !secret rokupremiere_left
+  min: 0
+  max: 255
+rokupremiere_right_text:
+  initial: !secret rokupremiere_right
+  min: 0
+  max: 255
+rokupremiere_ok_text:
+  initial: !secret rokupremiere_ok
+  min: 0
+  max: 255
+rokupremiere_replay_text:
+  initial: !secret rokupremiere_replay
+  min: 0
+  max: 255
+rokupremiere_asterisk_text:
+  initial: !secret rokupremiere_asterisk
+  min: 0
+  max: 255
+rokupremiere_rewind_text:
+  initial: !secret rokupremiere_rewind
+  min: 0
+  max: 255
+rokupremiere_playpause_text:
+  initial: !secret rokupremiere_playpause
+  min: 0
+  max: 255
+rokupremiere_forward_text:
+  initial: !secret rokupremiere_forward
+  min: 0
+  max: 255
+rokupremiere_netflix_text:
+  initial: !secret rokupremiere_netflix
+  min: 0
+  max: 255
+rokupremiere_googleplay_text:
+  initial: !secret rokupremiere_googleplay
+  min: 0
+  max: 255
+rokupremiere_rakuten_text:
+  initial: !secret rokupremiere_rakuten
+  min: 0
+  max: 255
+rokupremiere_spotify_text:
+  initial: !secret rokupremiere_spotify
+  min: 0
+  max: 255
+
