@@ -1,0 +1,90 @@
+  <details>
+  <summary>Roku Premiere using mqtt call to smart IR blaster (Design and codes by stain3565): (Click to expand!)</summary>
+  
+  An example of a Roku Premiere remote that sends an mqtt ir code to (in my case) a ZS-06 / Zigbee IR Remote Control / TS1201.
+  I use Zigbee2MQTT in Home Assistant to learn the appropriate ir codes for the remote. 
+  
+  For flexibilty, this calls a generic script that allows an input_text to be passed, containing the ir code value. 
+  This allows simple reuse for other remotes.
+  I have also ensured these ir codes are in the secrets.yaml
+  Example yaml entries are in the yaml folder.
+  
+  My example overlays the four generic app buttons with images representing my specific remote buttons.
+
+  <img src="https://github.com/stain3565/generic-remote-control-card/blob/master/rokupremiere.png" height="578">
+
+```
+type: custom:generic-remote-control-card
+name: Roku Premiere Remote
+remote_template: rokupremiere
+buttons:
+  leftarrow:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_leftarrow_text") }}'
+  home:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_home_text") }}'
+  up:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_up_text") }}'
+  down:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_down_text") }}'
+  left:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_left_text") }}'
+  right:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_right_text") }}'
+  ok:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_ok_text") }}'
+  replay:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_replay_text") }}'
+  asterisk:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_asterisk_text") }}'
+  rewind:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_rewind_text") }}'
+  playpause:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_playpause_text") }}'
+  forward:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_forward_text") }}'
+  netflix:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_netflix_text") }}'
+  googleplay:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_googleplay_text") }}'
+  rakuten:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_rakuten_text") }}'
+  spotify:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_spotify_text") }}'
+
+
+```
+
+  </details>
+

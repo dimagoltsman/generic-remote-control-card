@@ -1,0 +1,8 @@
+living_room_ir_button:
+  sequence:
+  - service: mqtt.publish
+    data:
+      topic: zigbee2mqtt/Living Room Zigbee IR Remote Control/set
+      payload_template: '{ "ir_code_to_send": "{{ button_pressed }}" }'
+  alias: Living Room Ir Button
+  mode: single

@@ -1,0 +1,68 @@
+type: custom:generic-remote-control-card
+name: Roku Premiere Remote
+remote_template: rokupremiere
+buttons:
+  leftarrow:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_leftarrow_text") }}'
+  home:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_home_text") }}'
+  up:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_up_text") }}'
+  down:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_down_text") }}'
+  left:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_left_text") }}'
+  right:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_right_text") }}'
+  ok:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_ok_text") }}'
+  replay:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_replay_text") }}'
+  asterisk:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_asterisk_text") }}'
+  rewind:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_rewind_text") }}'
+  playpause:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_playpause_text") }}'
+  forward:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_forward_text") }}'
+  netflix:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_netflix_text") }}'
+  googleplay:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_googleplay_text") }}'
+  rakuten:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_rakuten_text") }}'
+  spotify:
+    call: script.living_room_ir_button
+    data:
+      button_pressed: '{{ states("input_text.rokupremiere_spotify_text") }}'
