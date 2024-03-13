@@ -184,7 +184,7 @@ type: 'custom:generic-remote-control-card'
 
 </details>
 <details>
-  <sumnary>Logitech z5500 IR remote example (mqtt tasmota/openbeken irsend)</summary>
+  <summary>Logitech z5500 IR remote example (mqtt tasmota/openbeken irsend) [Click Here to expand]</summary>
 
 ```
   type: custom:generic-remote-control-card
