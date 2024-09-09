@@ -183,6 +183,137 @@ type: 'custom:generic-remote-control-card'
 ```
 
 </details>
+<details>
+  <summary>Logitech z5500 IR remote example (mqtt tasmota/openbeken irsend) [Click Here to expand]</summary>
+
+```
+  type: custom:generic-remote-control-card
+buttons:
+  power:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-10-00-00-00
+  test:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-05-00-00-00
+  direct:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-0A-00-00-00
+  optical:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-0B-00-00-00
+  coax:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-0C-00-00-00
+  effect:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-1D-00-00-00
+  settings:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-1F-00-00-00
+  sub_plus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-03-00-00-00
+  center_plus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-02-00-00-00
+  surround_plus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-00-00-00-00
+  sub_minus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-01-00-00-00
+  center_minus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-06-00-00-00
+  surround_minus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-04-00-00-00
+  mute:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-16-00-00-00
+  volume_plus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-1A-00-00-00
+  volume_minus:
+    call: mqtt.publish
+    data:
+      qos: '1'
+      retain: false
+      topic: cmnd/s06/irSend
+      payload: NEC 08-0E-00-00-00
+name: z5500
+remote_template: logitech_z5500
+style: |
+  ha-card {
+    font-size: 10px;
+  }
+  h1{
+    text-align:left;
+    margin-left: 50px;
+  }
+
+```
+</details>
 
 <details>
   <summary>LG remote example: (Click to expand!)</summary>
