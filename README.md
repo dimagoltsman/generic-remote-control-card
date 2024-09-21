@@ -565,7 +565,100 @@ type: 'custom:generic-remote-control-card'
   </details>
   
   
- <details>
+<details>
+  <summary>Google Chromecast with Google TV Remote example based on Android TV Remote (see limitations inside the code) (Click to expand!)</summary>
+(remote design by @FaserF & @KaiSMR) <br /> 
+<img src="ccwgtv.png" height="400">
+
+```
+buttons:
+  top:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: DPAD_UP
+  bottom:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: DPAD_DOWN
+  ok:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: DPAD_CENTER
+  clickleft:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: DPAD_LEFT
+  clickright:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: DPAD_RIGHT
+  back:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: BACK
+  assistant:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: ASSIST
+  home:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: HOME
+  power:
+    call: remote.send_command
+    data:
+      command: POWER
+      entity_id: remote.chromecast_gtv_4k
+#Volume buttons works on my LG TV when set to control Chromcast volume, but not when set to control volume HDMI-CEC.
+  volumedown:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: VOLUME_DOWN
+  volumeup:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: VOLUME_UP
+  mute:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: MUTE
+#Source does not works on my LG TV when set to HDMI-CEC neither with the original remote. It works only when set to IR.
+  source:
+    call: remote.send_command
+    data:
+      entity_id: remote.chromecast_gtv_4k
+      command: TV
+  youtube:
+    call: remote.turn_on
+    data:
+      activity: vnd.youtube.launch://
+      entity_id: remote.chromecast_gtv_4k
+  netflix:
+    call: remote.turn_on
+    data:
+      activity: com.netflix.ninja
+      entity_id: remote.chromecast_gtv_4k
+name: Chromecast with Google TV
+remote_template: ccwgtv
+type: custom:generic-remote-control-card
+
+```
+
+  </details>
+  
+  
+  <details>
   <summary>PartnerTV Remote example, thanx to @VirtualL : (Click to expand!)</summary>
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/partner/remote-screen-shot.png?raw=true" height="400">
