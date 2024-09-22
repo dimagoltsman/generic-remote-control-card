@@ -566,7 +566,7 @@ type: 'custom:generic-remote-control-card'
   
   
 <details>
-  <summary>Google Chromecast with Google TV Remote example based on Android TV Remote (see limitations inside the code) (Click to expand!)</summary>
+  <summary>Google Chromecast with Google TV Remote based on Android TV Remote (see limitations inside the code for volume and source buttons) (Click to expand!)</summary>
 (remote design by @FaserF & @KaiSMR) <br /> 
 <img src="ccwgtv.png" height="400">
 
@@ -649,7 +649,7 @@ buttons:
     data:
       activity: com.netflix.ninja
       entity_id: remote.chromecast_gtv_4k
-name: Chromecast with Google TV
+name: Chromecast with Google TV (Android TV Remote)
 remote_template: ccwgtv
 type: custom:generic-remote-control-card
 
