@@ -2336,145 +2336,145 @@ name: Hisense TV
 remote_template: hisense_googletv
 buttons:
   power:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: POWER_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 26
   source:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: SOURCE_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 178
   netflix:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: NETFLIX_CODE
+      entity_id: media_player.hisense_tv
+      command: am start -n com.netflix.ninja/.MainActivity
   youtube:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: YOUTUBE_CODE
+      entity_id: media_player.hisense_tv
+      command: am start -n com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
   prime:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: PRIME_CODE
+      entity_id: media_player.hisense_tv
+      command: am start -n com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
   disney:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: DISNEY_CODE
+      entity_id: media_player.hisense_tv
+      command: am start -n com.disney.disneyplus/com.bamtechmedia.domern.main.MainActivity
   tubi:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: TUBI_CODE
+      entity_id: media_player.hisense_tv
+      command: am start -n com.tubitv/com.tubitv.activities.SplashActivity
   favorites:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: FAVORITES_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 182
   profile:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: PROFILE_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 284
   assistant:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: ASSISTANT_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 219
   settings:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: SETTINGS_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 176
   up:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: UP_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 19
   down:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: DOWN_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 20
   left:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: LEFT_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 21
   right:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: RIGHT_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 22
   ok:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: OK_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 66
   back:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: BACK_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 4
   home:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: HOME_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 3
   livetv:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: LIVETV_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 170
   volup:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: VOLUP_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 24
   voldown:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: VOLDOWN_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 25
   mute:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: MUTE_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 164
   chup:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: CHUP_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 166
   chdown:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: CHDOWN_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 167
   cc:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: CC_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 175
   menu:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: MENU_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 82
   playpause:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: PLAYPAUSE_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 85
   num123:
-    call: remote.send_command
+    call: androidtv.adb_command
     data:
-      entity_id: remote.YOUR_REMOTE
-      command: NUM123_CODE
+      entity_id: media_player.hisense_tv
+      command: input keyevent 227
 
 ```
 
