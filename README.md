@@ -4,6 +4,16 @@
 
 <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/example.png" height="400">
 
+## Testing Remote Templates Locally
+
+You can preview all remote templates in your browser without Home Assistant. This is useful for verifying button placement when developing or modifying a remote template.
+
+```sh
+./test-remotes.sh
+```
+
+This starts a local server and opens a page showing all remotes side by side. Click any button to see its ID. Press `Ctrl+C` to stop the server.
+
 ```
 resources:
   - url: /hacsfiles/generic-remote-control-card/generic-remote-control-card.js
@@ -2307,6 +2317,164 @@ buttons:
 name: Epson 2221508 for EB-FH08 projector
 remote_template: epson_2221508_eb_fh08
 type: custom:generic-remote-control-card
+
+```
+
+  </details>
+  <details>
+  <summary>Hisense Google TV remote: (Click to expand!)</summary>
+
+  <img src="https://github.com/dimagoltsman/generic-remote-control-card/raw/master/hisense_googletv.png" height="400">
+
+  Supports all buttons on the Hisense Google TV remote including app shortcuts (Netflix, YouTube, Prime Video, Disney+, Tubi), Google Assistant, D-pad navigation, volume/channel controls, and more.
+
+  Available button IDs: `power`, `source`, `netflix`, `youtube`, `prime`, `disney`, `tubi`, `favorites`, `profile`, `assistant`, `settings`, `up`, `left`, `ok`, `right`, `down`, `back`, `home`, `livetv`, `volup`, `mute`, `chup`, `voldown`, `cc`, `chdown`, `menu`, `playpause`, `num123`
+
+```
+type: custom:generic-remote-control-card
+name: Hisense TV
+remote_template: hisense_googletv
+buttons:
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: POWER_CODE
+  source:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: SOURCE_CODE
+  netflix:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: NETFLIX_CODE
+  youtube:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: YOUTUBE_CODE
+  prime:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: PRIME_CODE
+  disney:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: DISNEY_CODE
+  tubi:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: TUBI_CODE
+  favorites:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: FAVORITES_CODE
+  profile:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: PROFILE_CODE
+  assistant:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: ASSISTANT_CODE
+  settings:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: SETTINGS_CODE
+  up:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: UP_CODE
+  down:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: DOWN_CODE
+  left:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: LEFT_CODE
+  right:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: RIGHT_CODE
+  ok:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: OK_CODE
+  back:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: BACK_CODE
+  home:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: HOME_CODE
+  livetv:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: LIVETV_CODE
+  volup:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: VOLUP_CODE
+  voldown:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: VOLDOWN_CODE
+  mute:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: MUTE_CODE
+  chup:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: CHUP_CODE
+  chdown:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: CHDOWN_CODE
+  cc:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: CC_CODE
+  menu:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: MENU_CODE
+  playpause:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: PLAYPAUSE_CODE
+  num123:
+    call: remote.send_command
+    data:
+      entity_id: remote.YOUR_REMOTE
+      command: NUM123_CODE
 
 ```
 

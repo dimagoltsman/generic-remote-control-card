@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remote Control Templates - Test Page</title>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background: #1a1a2e;
+        color: #e0e0e0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #888;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .remote-card {
+        background: #16213e;
+        border: 1px solid #0f3460;
+        border-radius: 12px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: border-color 0.2s;
+        cursor: default;
+    }
+
+    .remote-card:hover {
+        border-color: #e94560;
+    }
+
+    .remote-card h2 {
+        font-size: 14px;
+        color: #e94560;
+        margin-bottom: 12px;
+        font-family: monospace;
+    }
+
+    .remote-wrapper {
+        position: relative;
+    }
+
+    .error {
+        color: #ff6b6b;
+        font-size: 12px;
+        padding: 20px;
+        text-align: center;
+        max-width: 200px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Remote Control Templates</h1>
+<p class="subtitle">All available remotes rendered for visual testing</p>
+<div class="grid" id="grid"></div>
+
+<script>
+const REMOTES = [
+    'action_ir32',
+    'android_custom_keyboard',
+    'apple4kremote',
+    'ccwgtv',
+    'edifier_rc600a',
+    'epson_2221508_eb_fh08',
+    'firestick4kremote',
+    'hisense_googletv',
+    'infocus_ir1109r1',
+    'jblsoundbar',
+    'lg',
+    'lg_new',
+    'logitech_z5500',
+    'mibox',
+    'partner',
+    'rokupremiere',
+    'samsungtv',
+    'simple',
+    'yesremote'
+];
+
+async function loadRemote(name) {
+    const card = document.createElement('div');
+    card.className = 'remote-card';
+
+    const title = document.createElement('h2');
+    title.textContent = name;
+    card.appendChild(title);
+
+    try {
+        const response = await fetch(`remotes/${name}/remote-html.js`);
+        const code = await response.text();
+
+        // Execute the script to define the functions
+        const fn = new Function(code + `; return { style: getRemoteStyle_${name}, html: getRemoteHtml_${name} };`);
+        const { style, html } = fn();
+
+        const config = {
+            name: '',
+            remote_template: name
+        };
+
+        // Rewrite base_url to use relative paths for local testing
+        let cssText = style(config);
+        cssText = cssText.replace(/\/hacsfiles\/generic-remote-control-card\/remotes\//g, 'remotes/');
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'remote-wrapper';
+
+        const shadow = wrapper.attachShadow({ mode: 'open' });
+        const styleEl = document.createElement('style');
+        styleEl.textContent = cssText;
+        shadow.appendChild(styleEl);
+
+        const container = document.createElement('div');
+        container.innerHTML = html(config);
+        shadow.appendChild(container);
+
+        // Prevent link navigation
+        shadow.addEventListener('click', e => {
+            if (e.target.closest('a')) {
+                e.preventDefault();
+                const btn = e.target.closest('li');
+                if (btn) {
+                    title.textContent = `${name} → ${btn.id}`;
+                    setTimeout(() => { title.textContent = name; }, 1500);
+                }
+            }
+        });
+
+        card.appendChild(wrapper);
+    } catch (err) {
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error';
+        errorDiv.textContent = `Failed to load: ${err.message}`;
+        card.appendChild(errorDiv);
+    }
+
+    return card;
+}
+
+async function init() {
+    const grid = document.getElementById('grid');
+    const cards = await Promise.all(REMOTES.map(loadRemote));
+    cards.forEach(card => grid.appendChild(card));
+}
+
+init();
+</script>
+</body>
+</html>
