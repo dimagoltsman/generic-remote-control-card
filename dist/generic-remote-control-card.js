@@ -77,6 +77,7 @@ class GenericRemotControlCard extends HTMLElement {
       let button = buttons[i]
         button.addEventListener('click', function(source){
           console.log(button.id);
+          source.preventDefault(); // Prevents the default action of the event from being triggered
           let buttonData = getButtonData(button.id, config);
           console.log(buttonData)
           let domain = buttonData.call.split(".")[0]
